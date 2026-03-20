@@ -231,6 +231,27 @@
     transition: transform 0.6s ease;
   }
   #photoInput { display: none; }
+
+  /* PROFILES */
+.profiles-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.2rem; }
+.profile-card {
+  background: var(--surface); border: 1px solid var(--border); border-radius: 8px;
+  padding: 1.6rem 1.4rem; text-decoration: none; display: flex; flex-direction: column;
+  gap: 0.8rem; transition: all 0.3s; position: relative; overflow: hidden;
+}
+.profile-card::before {
+  content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px;
+  background: var(--profile-color, var(--accent)); opacity: 0; transition: opacity 0.3s;
+}
+.profile-card:hover { border-color: var(--profile-color, var(--accent)); transform: translateY(-4px); box-shadow: 0 12px 40px #0008; }
+.profile-card:hover::before { opacity: 1; }
+.profile-top { display: flex; align-items: center; gap: 0.9rem; }
+.profile-logo { width: 38px; height: 38px; border-radius: 6px; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; background: var(--surface2); border: 1px solid var(--border); flex-shrink: 0; }
+.profile-name { font-size: 1rem; font-weight: 700; color: var(--text-bright); }
+.profile-handle { font-family: 'JetBrains Mono', monospace; font-size: 0.72rem; color: var(--profile-color, var(--accent)); }
+.profile-desc { font-size: 0.82rem; color: var(--text-muted); line-height: 1.6; }
+.profile-arrow { font-family: 'JetBrains Mono', monospace; font-size: 0.68rem; color: var(--text-muted); margin-top: auto; display: flex; align-items: center; gap: 0.4rem; transition: color 0.2s, gap 0.2s; }
+.profile-card:hover .profile-arrow { color: var(--profile-color, var(--accent)); gap: 0.7rem; }
   </style>
 </head>
 <body>
@@ -642,10 +663,47 @@
     </div>
   </section>
  
+<!-- PROFILS & LIENS -->
+<section id="profiles">
+  <div class="section-header fade-in">
+    <span class="section-number">05</span>
+    <h2>Profils <span>&amp; Liens</span></h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="profiles-grid">
+
+    <a href="https://github.com/ImNvthan" target="_blank" class="profile-card fade-in" style="--profile-color:#6e7681;">
+      <div class="profile-top">
+        <div class="profile-logo">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--text-bright)"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+        </div>
+        <div>
+          <div class="profile-name">GitHub</div>
+          <div class="profile-handle">@ImNvthan</div>
+        </div>
+      </div>
+      <div class="profile-desc">Code source de mes projets, scripts et configurations publiés.</div>
+      <div class="profile-arrow">Voir le profil <span>→</span></div>
+    </a>
+
+    <a href="https://www.root-me.org/Nvthan?lang=fr#a5e69ac856c25c2d715b300989513ac0 target="_blank" class="profile-card fade-in" style="--profile-color:#ff4444;">
+      <div class="profile-top">
+        <div class="profile-logo">🎯</div>
+        <div>
+          <div class="profile-name">Root-Me</div>
+          <div class="profile-handle">@Nvthan</div>
+        </div>
+      </div>
+      <div class="profile-desc">Plateforme de challenges en cybersécurité : CTF, réseau, web, forensic.</div>
+      <div class="profile-arrow">Voir le profil <span>→</span></div>
+    </a>
+  </div>
+</section>
+
   <!-- CV -->
     <section id="cv">
     <div class="section-header fade-in">
-      <span class="section-number">05</span>
+      <span class="section-number">06</span>
       <h2>Curriculum<span> vitæ</span></h2>
       <div class="section-line"></div>
     </div>
@@ -666,7 +724,7 @@
   <!-- CONTACT -->
   <section id="contact">
     <div class="section-header fade-in">
-      <span class="section-number">06</span>
+      <span class="section-number">07</span>
       <h2>Con<span>tact</span></h2>
       <div class="section-line"></div>
     </div>
@@ -688,6 +746,7 @@
       </div>
   </section>
 
+  
   <footer>
     <div class="footer-copy">© 2025 <span>Nathan Drancourt</span> — Administrateur Systèmes &amp; Réseaux</div>
     <div class="footer-copy">Hébergé sur <span>GitHub Pages</span></div>
