@@ -148,6 +148,10 @@
     .project-title { font-size: 1rem; font-weight: 700; color: var(--text-bright); margin-bottom: 0.5rem; position: relative; z-index: 1; }
     .project-desc { font-size: 0.87rem; color: var(--text); line-height: 1.7; margin-bottom: 1.2rem; position: relative; z-index: 1; flex: 1; }
     .project-card .skill-tags { margin-top: auto; }
+    .project-meta { display: flex; justify-content: space-between; align-items: center; gap: 0.5rem; flex-wrap: wrap; margin-top: 1rem; padding-top: 0.9rem; border-top: 1px solid var(--border); position: relative; z-index: 1; }
+    .project-context { font-family: 'JetBrains Mono', monospace; font-size: 0.68rem; color: var(--text-muted); display: flex; align-items: center; gap: 0.35rem; }
+    .project-link { font-family: 'JetBrains Mono', monospace; font-size: 0.68rem; color: var(--accent2); text-decoration: none; white-space: nowrap; transition: color 0.2s, transform 0.2s; }
+    .project-link:hover { color: var(--accent); transform: translateX(2px); }
 
     /* CERTS & EDU */
     .certs-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 1rem; margin-top: 2rem; }
@@ -504,13 +508,27 @@
   <section id="projects">
     <div class="section-header fade-in">
       <span class="section-number">04</span>
-      <h2>Projets</h2>
+      <h2>Pro<span>jets</span></h2>
       <div class="section-line"></div>
     </div>
 
     <div class="projects-grid">
 
-
+ <!-- Script Serveur LAMP -->
+      <div class="project-card fade-in">
+        <div class="project-top">
+          <div class="project-icon">⚙️</div>
+          <div class="project-badge badge-blue">Automatisation</div>
+        </div>
+        <div class="project-title">Script d'automatisation du déploiement d'un serveur web LAMP sur Debian</div>
+        <div class="project-desc">
+Script Bash permettant de déployer automatiquement un environnement LAMP complet sur Debian, incluant l'installation, la configuration et la préparation du serveur web pour l'hébergement d'applications PHP.      </div>
+        <div class="skill-tags"><span class="tag">Bash</span><span class="tag">Serveur</span><span class="tag">Debian</span><span class="tag">Automatisation</span></div>
+        <div class="project-meta">
+          <span class="project-context">👤​ Personnel</span>
+          <a href="https://github.com/ImNvthan/lamp-debian-installer" target="_blank" class="project-link">Voir le projet →</a>
+        </div>
+      </div>
 
       <!-- Script AD -->
       <div class="project-card fade-in">
@@ -523,6 +541,9 @@
           Automatisation PowerShell/WPF couvrant le cycle de vie des comptes AD : création (génération intelligente de logins, unicité), modification, et gestion des dossiers personnels avec droits NTFS. Accès LDAP natif, sans module RSAT.
         </div>
         <div class="skill-tags"><span class="tag">PowerShell</span><span class="tag">WPF / XAML</span><span class="tag">Active Directory</span><span class="tag">LDAP</span></div>
+        <div class="project-meta">
+          <span class="project-context">🏢 Automobile Club de l'Ouest</span>
+        </div>
       </div>
 
       <!-- Supervision intelligente GLPI avec alerting temps réel -->
@@ -533,9 +554,12 @@
         </div>
         <div class="project-title">Supervision intelligente GLPI avec alerting temps réel</div>
         <div class="project-desc">
-          Développement d'un script de supervision personnalisé sous Linux permettant la détection en temps réel des incidents critiques sur GLPI (Apache, MariaDB, disponibilité web).
+          Développement d'un système de supervision personnalisé sous Linux permettant la détection en temps réel des incidents critiques sur GLPI (Apache, MariaDB, disponibilité web).
         </div>
         <div class="skill-tags"><span class="tag">Bash</span><span class="tag">Monitoring</span><span class="tag">Linux</span><span class="tag">Automatisation</span></div>
+        <div class="project-meta">
+          <span class="project-context">🏢 Automobile Club de l'Ouest</span>
+        </div>
       </div>
 
       <!-- MDM -->
@@ -549,6 +573,9 @@
           Mise en place d'une solution de Mobile Device Management permettant de centraliser la gestion et la sécurisation des appareils mobiles et postes utilisateurs.
         </div>
         <div class="skill-tags"><span class="tag">MDM</span><span class="tag">Intune</span><span class="tag">Sécurité</span></div>
+        <div class="project-meta">
+          <span class="project-context">🏢 Automobile Club de l'Ouest</span>
+        </div>
       </div>
 
       <!-- Purge automatique du parc GLPI -->
@@ -562,6 +589,9 @@
           Automatisation de la suppression des périphériques non utilisés depuis un certain temps.
         </div>
         <div class="skill-tags"><span class="tag">Linux</span><span class="tag">CRON</span><span class="tag">GLPI</span><span class="tag">Scripting</span></div>
+        <div class="project-meta">
+          <span class="project-context">🏢 Automobile Club de l'Ouest</span>
+        </div>
       </div>
 
       <!-- Synchronisation LDAP -->
@@ -575,6 +605,9 @@
           Automatisation de la synchronisation des utilisateurs depuis un annuaire LDAP/Active Directory vers GLPI.
         </div>
         <div class="skill-tags"><span class="tag">Linux</span><span class="tag">CRON</span><span class="tag">GLPI</span><span class="tag">Scripting</span></div>
+        <div class="project-meta">
+          <span class="project-context">🏢 Automobile Club de l'Ouest</span>
+        </div>
       </div>
 
       <!-- Tickets GLPI via Power Automate -->
@@ -589,6 +622,9 @@
           intelligent et notifications automatiques via Power Automate.
         </div>
         <div class="skill-tags"><span class="tag">Power Automate</span><span class="tag">GLPI</span><span class="tag">MS Forms</span><span class="tag">M365</span></div>
+        <div class="project-meta">
+          <span class="project-context">🏢 Automobile Club de l'Ouest</span>
+        </div>
       </div>
 
       <!-- Migration GLPI 10 → GLPI 11 -->
@@ -603,6 +639,9 @@
           avec sauvegarde des données, tests et documentation.
         </div>
         <div class="skill-tags"><span class="tag">GLPI</span><span class="tag">Linux</span><span class="tag">MySQL</span><span class="tag">Documentation</span></div>
+        <div class="project-meta">
+          <span class="project-context">🏢 Automobile Club de l'Ouest</span>
+        </div>
       </div>
 
       <!-- Migration pfSense → OPNsense -->
@@ -617,6 +656,9 @@
           vers OPNsense et la reconfiguration des règles de filtrage.
         </div>
         <div class="skill-tags"><span class="tag">pfSense</span><span class="tag">OPNsense</span><span class="tag">VLAN</span><span class="tag">Firewall</span></div>
+        <div class="project-meta">
+          <span class="project-context">🏢 Groupe LELIEVRE</span>
+        </div>
       </div>
 
       <!-- Notifications GLPI -->
@@ -630,6 +672,9 @@
           Configuration et personnalisation des notifications par e‑mail des tickets GLPI, en intégrant un modèle HTML avec le logo de l'entreprise lors de la création d'un ticket.
         </div>
         <div class="skill-tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">GLPI</span></div>
+        <div class="project-meta">
+          <span class="project-context">🏢 Groupe LELIEVRE</span>
+        </div>
       </div>
 
       <!-- Serveur de logs interne -->
@@ -644,6 +689,9 @@
           systèmes et réseau, améliorant la visibilité sur l'infrastructure.
         </div>
         <div class="skill-tags"><span class="tag">Linux</span><span class="tag">Syslog</span><span class="tag">Supervision</span></div>
+        <div class="project-meta">
+          <span class="project-context">🏢 Groupe LELIEVRE</span>
+        </div>
       </div>
 
     </div>
