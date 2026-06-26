@@ -13,7 +13,7 @@
       --bg: #090c10; --surface: #0f1419; --surface2: #161c24; --border: #1e2a38;
       --accent: #2a7fff; --accent2: #00e5ff; --accent-dim: #2a7fff22;
       --text: #c9d8eb; --text-muted: #566a82; --text-bright: #eaf2ff;
-      --green: #00c896; --yellow: #f5c518;
+      --green: #00c896; --yellow: #f5c518; --red: #ff5566;
     }
     html { scroll-behavior: smooth; }
     body { font-family: 'Syne', sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; overflow-x: hidden; }
@@ -134,7 +134,7 @@
 
     /* PROJECTS */
     .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
-    .project-card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 1.8rem; transition: all 0.3s; position: relative; overflow: hidden; }
+    .project-card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 1.8rem; transition: all 0.3s; position: relative; overflow: hidden; display: flex; flex-direction: column; }
     .project-card::after { content: ''; position: absolute; inset: 0; background: linear-gradient(135deg, var(--accent-dim) 0%, transparent 60%); opacity: 0; transition: opacity 0.3s; }
     .project-card:hover { border-color: var(--accent); transform: translateY(-3px); box-shadow: 0 10px 40px #0007; }
     .project-card:hover::after { opacity: 1; }
@@ -144,8 +144,10 @@
     .badge-green { color: var(--green); border-color: #00c89644; background: #00c89611; }
     .badge-blue  { color: var(--accent2); border-color: #00e5ff44; background: #00e5ff11; }
     .badge-yellow { color: var(--yellow); border-color: #f5c51844; background: #f5c51811; }
+    .badge-red { color: var(--red); border-color: #ff556644; background: #ff556611; }
     .project-title { font-size: 1rem; font-weight: 700; color: var(--text-bright); margin-bottom: 0.5rem; position: relative; z-index: 1; }
-    .project-desc { font-size: 0.87rem; color: var(--text); line-height: 1.7; margin-bottom: 1.2rem; position: relative; z-index: 1; }
+    .project-desc { font-size: 0.87rem; color: var(--text); line-height: 1.7; margin-bottom: 1.2rem; position: relative; z-index: 1; flex: 1; }
+    .project-card .skill-tags { margin-top: auto; }
 
     /* CERTS & EDU */
     .certs-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 1rem; margin-top: 2rem; }
@@ -217,7 +219,6 @@
   .photo-inner {
     position: relative; z-index: 1;
     width: 200%;
-    aspect-ratio:;
     overflow: hidden;
     border-radius: 12px;
     background: var(--rose-light);
@@ -242,7 +243,6 @@
       <li><a href="#skills">Compétences</a></li>
       <li><a href="#experience">Expériences</a></li>
       <li><a href="#projects">Projets</a></li>
-     <li><a href="#projects">Projets</a></li>
       <li><a href="#cv">Curriculum vitæ</a></li>
     </ul>
   </nav>
@@ -442,10 +442,10 @@
         </ul>
         <ul class="timeline-projects">
           <div class="timeline-projects-title">Projets</div>
-        <li>Création de notifications pour les tickets GLPI par Mail (Users) & Teams (Tech)</li>
-         <li>Mise en place d'un MDM (Intune)</li>
-         <li>Purge automatique du parc GLPI</li>
-         <li>Automatisation synchronisation LDAP</li>
+          <li>Création de notifications pour les tickets GLPI par Mail (Users) &amp; Teams (Tech)</li>
+          <li>Mise en place d'un MDM (Intune)</li>
+          <li>Purge automatique du parc GLPI</li>
+          <li>Automatisation synchronisation LDAP</li>
           <li>Création de notifications automatiques pour les tickets GLPI</li>
           <li>Automatisation de la création de tickets via Microsoft Forms &amp; Power Automate</li>
           <li>Migration de GLPI 10 vers GLPI 11</li>
@@ -500,26 +500,58 @@
     </div>
   </section>
 
-  <!-- PROJETS & CERTIFICATIONS -->
+  <!-- PROJETS -->
   <section id="projects">
     <div class="section-header fade-in">
       <span class="section-number">04</span>
-      <h2>Projets &amp; <span>Certifications</span></h2>
+      <h2>Projets</h2>
       <div class="section-line"></div>
     </div>
 
-    <div class="projects-grid">  
-            <div class="project-card fade-in">
+    <div class="projects-grid">
+
+
+
+      <!-- Script AD -->
+      <div class="project-card fade-in">
+        <div class="project-top">
+          <div class="project-icon">🛠️</div>
+          <div class="project-badge badge-blue">Active Directory</div>
+        </div>
+        <div class="project-title">Suite d'outils graphiques de gestion des utilisateurs Active Directory</div>
+        <div class="project-desc">
+          Automatisation PowerShell/WPF couvrant le cycle de vie des comptes AD : création (génération intelligente de logins, unicité), modification, et gestion des dossiers personnels avec droits NTFS. Accès LDAP natif, sans module RSAT.
+        </div>
+        <div class="skill-tags"><span class="tag">PowerShell</span><span class="tag">WPF / XAML</span><span class="tag">Active Directory</span><span class="tag">LDAP</span></div>
+      </div>
+
+      <!-- Supervision intelligente GLPI avec alerting temps réel -->
+      <div class="project-card fade-in">
+        <div class="project-top">
+          <div class="project-icon">📊</div>
+          <div class="project-badge badge-red">Monitoring</div>
+        </div>
+        <div class="project-title">Supervision intelligente GLPI avec alerting temps réel</div>
+        <div class="project-desc">
+          Développement d'un script de supervision personnalisé sous Linux permettant la détection en temps réel des incidents critiques sur GLPI (Apache, MariaDB, disponibilité web).
+        </div>
+        <div class="skill-tags"><span class="tag">Bash</span><span class="tag">Monitoring</span><span class="tag">Linux</span><span class="tag">Automatisation</span></div>
+      </div>
+
+      <!-- MDM -->
+      <div class="project-card fade-in">
         <div class="project-top">
           <div class="project-icon">📱</div>
-          <div class="project-badge badge-red ">Sécurité</div>
+          <div class="project-badge badge-red">Sécurité</div>
         </div>
         <div class="project-title">Mobile Device Management (MDM)</div>
         <div class="project-desc">
-Mise en place d’une solution de Mobile Device Management permettant de centraliser la gestion et la sécurisation des appareils mobiles et postes utilisateurs.         </div>
+          Mise en place d'une solution de Mobile Device Management permettant de centraliser la gestion et la sécurisation des appareils mobiles et postes utilisateurs.
+        </div>
         <div class="skill-tags"><span class="tag">MDM</span><span class="tag">Intune</span><span class="tag">Sécurité</span></div>
       </div>
 
+      <!-- Purge automatique du parc GLPI -->
       <div class="project-card fade-in">
         <div class="project-top">
           <div class="project-icon">💻</div>
@@ -527,11 +559,12 @@ Mise en place d’une solution de Mobile Device Management permettant de central
         </div>
         <div class="project-title">Purge automatique du parc GLPI</div>
         <div class="project-desc">
-Automatisation de la suppression des périphérique non utilisé depuis un certain temps. 
+          Automatisation de la suppression des périphériques non utilisés depuis un certain temps.
         </div>
         <div class="skill-tags"><span class="tag">Linux</span><span class="tag">CRON</span><span class="tag">GLPI</span><span class="tag">Scripting</span></div>
       </div>
 
+      <!-- Synchronisation LDAP -->
       <div class="project-card fade-in">
         <div class="project-top">
           <div class="project-icon">👥​</div>
@@ -539,11 +572,12 @@ Automatisation de la suppression des périphérique non utilisé depuis un certa
         </div>
         <div class="project-title">Synchronisation LDAP</div>
         <div class="project-desc">
-Automatisation de la synchronisation des utilisateurs depuis un annuaire LDAP/Active Directory vers GLPI. 
+          Automatisation de la synchronisation des utilisateurs depuis un annuaire LDAP/Active Directory vers GLPI.
         </div>
         <div class="skill-tags"><span class="tag">Linux</span><span class="tag">CRON</span><span class="tag">GLPI</span><span class="tag">Scripting</span></div>
       </div>
 
+      <!-- Tickets GLPI via Power Automate -->
       <div class="project-card fade-in">
         <div class="project-top">
           <div class="project-icon">⚡</div>
@@ -557,6 +591,7 @@ Automatisation de la synchronisation des utilisateurs depuis un annuaire LDAP/Ac
         <div class="skill-tags"><span class="tag">Power Automate</span><span class="tag">GLPI</span><span class="tag">MS Forms</span><span class="tag">M365</span></div>
       </div>
 
+      <!-- Migration GLPI 10 → GLPI 11 -->
       <div class="project-card fade-in">
         <div class="project-top">
           <div class="project-icon">🔄</div>
@@ -570,6 +605,7 @@ Automatisation de la synchronisation des utilisateurs depuis un annuaire LDAP/Ac
         <div class="skill-tags"><span class="tag">GLPI</span><span class="tag">Linux</span><span class="tag">MySQL</span><span class="tag">Documentation</span></div>
       </div>
 
+      <!-- Migration pfSense → OPNsense -->
       <div class="project-card fade-in">
         <div class="project-top">
           <div class="project-icon">🌐</div>
@@ -583,18 +619,20 @@ Automatisation de la synchronisation des utilisateurs depuis un annuaire LDAP/Ac
         <div class="skill-tags"><span class="tag">pfSense</span><span class="tag">OPNsense</span><span class="tag">VLAN</span><span class="tag">Firewall</span></div>
       </div>
 
-            <div class="project-card fade-in">
+      <!-- Notifications GLPI -->
+      <div class="project-card fade-in">
         <div class="project-top">
           <div class="project-icon">🎫</div>
-          <div class="project-badge badge">Support</div>
+          <div class="project-badge badge-blue">Support</div>
         </div>
         <div class="project-title">Notifications GLPI</div>
         <div class="project-desc">
-Configuration et personnalisation des notifications par e‑mail des tickets GLPI, en intégrant un modèle HTML avec le logo de l’entreprise lors de la création d’un ticket.
+          Configuration et personnalisation des notifications par e‑mail des tickets GLPI, en intégrant un modèle HTML avec le logo de l'entreprise lors de la création d'un ticket.
         </div>
         <div class="skill-tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">GLPI</span></div>
       </div>
 
+      <!-- Serveur de logs interne -->
       <div class="project-card fade-in">
         <div class="project-top">
           <div class="project-icon">📊</div>
@@ -612,7 +650,7 @@ Configuration et personnalisation des notifications par e‑mail des tickets GLP
 
     <!-- Certifications -->
     <div style="margin-top:4rem;">
-      <h3 style="font-size:1.2rem; color:var(--text-bright); margin-bottom:1rem;">Certifications <span style="color:var(--accent)">&amp; Formations</span></h3>
+      <h3 style="font-size:1.2rem; color:var(--text-bright); margin-bottom:1rem;">Certi<span style="color:var(--accent)">fications </span></h3>
       <div class="certs-grid">
         <div class="cert-card fade-in">
           <div class="cert-icon">🐧</div>
@@ -664,9 +702,8 @@ Configuration et personnalisation des notifications par e‑mail des tickets GLP
         <div class="edu-card fade-in">
           <div class="edu-date">2021 — 2023</div>
           <div class="edu-diploma">Baccalauréat Professionnel Systèmes Numériques SSIHT</div>
-        <div class="edu-description">Sûreté & Sécurité des Infrastructures de l’Habitat et du Tertiaire</div>
-          <div class="edu-school">// Saint Joseph La Salle - Pruillé-le-Chétif
-</div>
+          <div class="edu-description">Sûreté &amp; Sécurité des Infrastructures de l'Habitat et du Tertiaire</div>
+          <div class="edu-school">// Saint Joseph La Salle - Pruillé-le-Chétif</div>
         </div>
         <div class="edu-card fade-in">
           <div class="edu-date">2019 — 2021</div>
@@ -676,28 +713,24 @@ Configuration et personnalisation des notifications par e‑mail des tickets GLP
       </div>
     </div>
   </section>
- 
+
   <!-- CV -->
-    <section id="cv">
+  <section id="cv">
     <div class="section-header fade-in">
       <span class="section-number">05</span>
       <h2>Curriculum<span> vitæ</span></h2>
       <div class="section-line"></div>
     </div>
-            <!-- Photo -->
-<section class="photo-section">
-  <div class="photo-frame">
-    <div class="photo-inner">
-      <img src="Curriculum-vitæ.png" alt="cv" style="display:block;" />
-    </div>
-  </div>
-</section>
-          </div>
+    <!-- Photo -->
+    <div class="photo-section">
+      <div class="photo-frame">
+        <div class="photo-inner">
+          <img src="Curriculum-vitæ.png" alt="cv" style="display:block;" />
         </div>
       </div>
-      
+    </div>
   </section>
-  
+
   <!-- CONTACT -->
   <section id="contact">
     <div class="section-header fade-in">
@@ -721,6 +754,7 @@ Configuration et personnalisation des notifications par e‑mail des tickets GLP
           </div>
         </div>
       </div>
+    </div>
   </section>
 
   <footer>
