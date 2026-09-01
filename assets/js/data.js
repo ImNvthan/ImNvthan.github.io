@@ -197,12 +197,15 @@ const DATA = {
   //  - "url"  : le lien « Afficher le certificat » copié depuis LinkedIn (ou null s'il n'y en a pas).
   //  - "logo" : nom d'un fichier dans assets/certs/ (png, jpg ou svg). null => initiale de l'organisme.
   certifications: [
-    { name: "Administrez un système Linux", issuer: "OpenClassrooms", url: null, logo: "openclassrooms.svg" },
-    { name: "Administration système et infrastructure IT", issuer: "Google", url: null, logo: "google.svg" },
-    { name: "Fondements de la cybersécurité", issuer: "Google", url: null, logo: "google.svg" },
-    { name: "Sécurité des réseaux informatique", issuer: "FUN-MOOC", url: null, logo: "fun-mooc.svg" },
-    { name: "Fondements de l'assistance technique", issuer: "Google", url: null, logo: "google.svg" },
-    { name: "Atelier RGPD", issuer: "Certification", url: null, logo: null },
+    { name: "Administrez un système Linux", issuer: "OpenClassrooms", url: "https://openclassrooms.com/fr/courses/7274161-administrez-un-systeme-linux", logo: "openclassrooms.svg" },
+    { name: "Découvrez le cloud avec Amazon Web Services", issuer: "OpenClassrooms", url: "https://openclassrooms.com/fr/courses/4810836-decouvrez-le-cloud-avec-amazon-web-services", logo: "openclassrooms.svg" },
+    { name: "Prenez le contrôle à distance d'un poste Linux/Windows avec VNC", issuer: "OpenClassrooms", url: "https://openclassrooms.com/fr/courses/1733046-prenez-le-controle-a-distance-d-un-poste-linux-windows-avec-vnc", logo: "openclassrooms.svg" },
+    { name: "Gérez votre parc informatique avec GLPI", issuer: "OpenClassrooms", url: "https://openclassrooms.com/fr/courses/1730516-gerez-votre-parc-informatique-avec-glpi", logo: "openclassrooms.svg" },
+    { name: "Administration système et infrastructure IT", issuer: "Google", url: "https://www.coursera.org/account/accomplishments/verify/WO8M24SEOEP0", logo: "google.svg" },
+    { name: "Fondements de la cybersécurité", issuer: "Google", url: "https://www.coursera.org/account/accomplishments/verify/7HJJL3ZM4JKY", logo: "google.svg" },
+    { name: "Sécurité des réseaux informatique", issuer: "FUN-MOOC", url: "https://www.fun-mooc.fr/fr/cours/securite-des-reseaux-informatiques/", logo: "fun-mooc.svg" },
+    { name: "Fondements de l'assistance technique", issuer: "Google", url: "https://www.coursera.org/account/accomplishments/verify/5182IEH0E1EE", logo: "google.svg" },
+    { name: "Atelier RGPD", issuer: "Certification", url: "https://atelier-rgpd.cnil.fr/", logo: "https://atelier-rgpd.cnil.fr/pluginfile.php/128689/mod_label/intro/atelierRGPD_HD_fond_transparent.png" },
   ],
 
   // Homelab — labo perso auto-hébergé sur Proxmox. Services listés = ceux réellement déployés.
