@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nathan Drancourt — Administrateur Systèmes & Réseaux</title>
+  <meta name="description" content="Portfolio de Nathan Drancourt, Administrateur Systèmes & Réseaux : alternance à l'Automobile Club de l'Ouest, projets d'automatisation et homelab auto-hébergé." />
+  <meta name="author" content="Nathan Drancourt" />
+  <meta name="theme-color" content="#0b0d0c" />
+
+  <!-- Open Graph / réseaux sociaux -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Nathan Drancourt" />
+  <meta property="og:url" content="https://imnvthan.github.io/" />
+  <meta property="og:title" content="Nathan Drancourt — Administrateur Systèmes & Réseaux" />
+  <meta property="og:description" content="Alternance à l'Automobile Club de l'Ouest, projets d'automatisation GLPI/PowerShell et un homelab Proxmox auto-hébergé." />
+  <meta property="og:image" content="https://imnvthan.github.io/assets/og.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Nathan Drancourt — Administrateur Systèmes & Réseaux" />
+  <meta name="twitter:description" content="Alternance à l'Automobile Club de l'Ouest, projets d'automatisation GLPI/PowerShell et un homelab Proxmox auto-hébergé." />
+  <meta name="twitter:image" content="https://imnvthan.github.io/assets/og.png" />
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230b0d0c'/%3E%3Cpolygon points='50,18 82,38 82,72 50,92 18,72 18,38' fill='none' stroke='%23b7ffb0' stroke-width='4'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css?v=9" />
+</head>
+<body>
+  <a href="#main" class="skip-link">Aller au contenu</a>
+
+  <canvas id="scene" class="scene-canvas" aria-hidden="true"></canvas>
+
+  <header class="nav" id="nav">
+    <a href="#top" class="nav-brand">Nathan Drancourt</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false"><span></span></button>
+    <nav class="nav-links" id="navLinks">
+      <a href="#about">Profil</a>
+      <a href="#experience">Expérience</a>
+      <a href="#skills">Compétences</a>
+      <a href="#projects">Projets</a>
+      <a href="#homelab">Homelab</a>
+      <a href="#contact" class="nav-cta">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <p class="hero-kicker" id="heroKicker"></p>
+      <h1 class="hero-title" id="heroTitle" aria-label="Nathan Drancourt">
+        <span class="line"><span class="word">Nathan</span></span>
+        <span class="line"><span class="word accent">Drancourt.</span></span>
+      </h1>
+      <p class="hero-sub" id="heroTagline"></p>
+      <p class="hero-status" id="heroStatus"><span class="status-dot" aria-hidden="true"></span></p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary" data-magnetic><span>Me contacter</span></a>
+        <a href="#" class="btn btn-ghost" id="heroCv" download data-magnetic><span>Télécharger le CV</span></a>
+      </div>
+      <div class="scroll-cue" aria-hidden="true"><span></span>défiler</div>
+    </section>
+
+    <section class="stats" id="stats">
+      <div class="stats-inner" id="statsInner"></div>
+    </section>
+
+    <section id="about" class="panel">
+      <div class="panel-inner two-col">
+        <p class="kicker">01 — Profil</p>
+        <div>
+          <div class="prose" id="aboutProse"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="panel">
+      <div class="panel-inner">
+        <p class="kicker">02 — Parcours</p>
+        <div class="timeline" id="timeline"></div>
+      </div>
+    </section>
+
+    <section id="skills" class="panel">
+      <div class="panel-inner">
+        <p class="kicker">03 — Savoir-faire</p>
+        <div class="skill-rows" id="skillRows"></div>
+      </div>
+    </section>
+
+    <section id="projects" class="panel">
+      <div class="panel-inner">
+        <p class="kicker">04 — Réalisations</p>
+        <div class="project-grid" id="projectGrid"></div>
+      </div>
+    </section>
+
+    <section id="homelab" class="panel">
+      <div class="panel-inner">
+        <p class="kicker">05 — Homelab</p>
+        <h2 class="homelab-title">Un labo qui tourne <span class="accent">en permanence.</span></h2>
+        <div class="homelab-grid">
+          <div class="homelab-rig">
+            <div class="server" aria-hidden="true">
+              <div class="server-head">
+                <span class="server-brand">PowerEdge T410</span>
+                <span class="server-led"></span>
+              </div>
+              <span class="server-bay live"></span>
+              <span class="server-bay live"></span>
+              <span class="server-bay live"></span>
+              <span class="server-bay"></span>
+              <span class="server-bay live"></span>
+              <span class="server-bay"></span>
+            </div>
+            <dl class="spec-list" id="homelabSpecs"></dl>
+          </div>
+          <div class="homelab-main">
+            <p class="homelab-intro" id="homelabIntro"></p>
+            <div class="stack-groups" id="homelabStack"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="learning" class="panel">
+      <div class="panel-inner two-col">
+        <p class="kicker">06 — Bagage</p>
+        <div class="bagage-cols">
+          <div class="bagage-block">
+            <h3 class="bagage-subhead">Diplômes</h3>
+            <ul class="edu-list" id="eduList"></ul>
+          </div>
+          <div class="bagage-block">
+            <h3 class="bagage-subhead">Certifications</h3>
+            <ul class="cert-list" id="certList"></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="panel contact-panel">
+      <div class="panel-inner">
+        <p class="kicker">07 — Contact</p>
+        <h2 class="contact-title">Discutons de<br /><span class="accent">votre projet.</span></h2>
+        <div class="contact-row">
+          <a href="#" class="btn btn-primary btn-lg" id="contactMail" data-magnetic><span>Envoyer un e-mail</span></a>
+          <div class="contact-links">
+            <a href="#" id="linkedinLink" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="#" id="githubLink" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <span id="locationText"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>© <span id="year"></span> Nathan Drancourt</span>
+  </footer>
+
+  <script src="assets/vendor/three.min.js"></script>
+  <script src="assets/vendor/gsap.min.js"></script>
+  <script src="assets/vendor/ScrollTrigger.min.js"></script>
+  <script src="assets/js/data.js?v=5"></script>
+  <script src="assets/js/scene.js?v=1"></script>
+  <script src="assets/js/main.js?v=9"></script>
+</body>
+</html>
