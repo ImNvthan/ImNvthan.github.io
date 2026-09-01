@@ -17,7 +17,7 @@ const DATA = {
   stats: [
     { value: 12, suffix: "", label: "mois en alternance" },
     { value: 11, suffix: "", label: "projets aboutis" },
-    { value: 6, suffix: "", label: "certifications" },
+    { value: 9, suffix: "", label: "certifications" },
     { value: 12, suffix: "", label: "services auto-hébergés" },
   ],
 
@@ -201,7 +201,7 @@ const DATA = {
     { name: "Découvrez le cloud avec Amazon Web Services", issuer: "OpenClassrooms", url: "https://openclassrooms.com/fr/courses/4810836-decouvrez-le-cloud-avec-amazon-web-services", logo: "openclassrooms.svg" },
     { name: "Prenez le contrôle à distance d'un poste Linux/Windows avec VNC", issuer: "OpenClassrooms", url: "https://openclassrooms.com/fr/courses/1733046-prenez-le-controle-a-distance-d-un-poste-linux-windows-avec-vnc", logo: "openclassrooms.svg" },
     { name: "Gérez votre parc informatique avec GLPI", issuer: "OpenClassrooms", url: "https://openclassrooms.com/fr/courses/1730516-gerez-votre-parc-informatique-avec-glpi", logo: "openclassrooms.svg" },
-    { name: "Administration système et infrastructure IT", issuer: "Google", url:"https://www.coursera.org/account/accomplishments/verify/WO8M24SEOEP0", logo: "google.svg" },
+    { name: "Administration système et infrastructure IT", issuer: "Google", url: "https://www.coursera.org/account/accomplishments/verify/WO8M24SEOEP0", logo: "google.svg" },
     { name: "Fondements de la cybersécurité", issuer: "Google", url: "https://www.coursera.org/account/accomplishments/verify/7HJJL3ZM4JKY", logo: "google.svg" },
     { name: "Sécurité des réseaux informatique", issuer: "FUN-MOOC", url: "https://www.fun-mooc.fr/fr/cours/securite-des-reseaux-informatiques/", logo: "fun-mooc.svg" },
     { name: "Fondements de l'assistance technique", issuer: "Google", url: "https://www.coursera.org/account/accomplishments/verify/5182IEH0E1EE", logo: "google.svg" },
