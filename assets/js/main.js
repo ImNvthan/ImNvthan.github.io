@@ -94,7 +94,31 @@ function renderContent() {
   ])));
 
   const certList = document.getElementById("certList");
-  DATA.certifications.forEach(c => certList.appendChild(el("li", { class: "reveal", text: c })));
+  DATA.certifications.forEach(c => {
+    const mkFallback = () => el("span", {
+      class: "cert-logo cert-logo--txt", "aria-hidden": "true",
+      text: (c.issuer || "•").charAt(0).toUpperCase(),
+    });
+    const logo = c.logo
+      ? el("img", {
+          class: "cert-logo", src: "assets/certs/" + c.logo, alt: "", loading: "lazy",
+          onerror: function () { this.replaceWith(mkFallback()); },
+        })
+      : mkFallback();
+    const parts = [
+      logo,
+      el("span", { class: "cert-body" }, [
+        el("span", { class: "cert-name", text: c.name }),
+        el("span", { class: "cert-issuer", text: c.issuer }),
+      ]),
+      c.url ? el("span", { class: "cert-go", "aria-hidden": "true", text: "↗" }) : null,
+    ];
+    certList.appendChild(
+      c.url
+        ? el("a", { class: "cert-item reveal", href: c.url, target: "_blank", rel: "noopener noreferrer" }, parts)
+        : el("div", { class: "cert-item reveal" }, parts)
+    );
+  });
 
   const hl = DATA.homelab;
   if (hl) {

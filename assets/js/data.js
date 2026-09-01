@@ -193,13 +193,16 @@ const DATA = {
     { date: "2021 — 2023", diploma: "Bac Pro Systèmes Numériques, option SSIHT", school: "Saint Joseph La Salle" },
   ],
 
+  // Certifications. Pour chaque entrée :
+  //  - "url"  : le lien « Afficher le certificat » copié depuis LinkedIn (ou null s'il n'y en a pas).
+  //  - "logo" : nom d'un fichier dans assets/certs/ (png, jpg ou svg). null => initiale de l'organisme.
   certifications: [
-    "Administrez un système Linux — OpenClassrooms",
-    "Administration système et infrastructure IT — Google",
-    "Fondements de la cybersécurité — Google",
-    "Sécurité des réseaux informatique — FUN-MOOC",
-    "Fondements de l'assistance technique — Google",
-    "Atelier RGPD — Certification",
+    { name: "Administrez un système Linux", issuer: "OpenClassrooms", url: null, logo: "openclassrooms.svg" },
+    { name: "Administration système et infrastructure IT", issuer: "Google", url: null, logo: "google.svg" },
+    { name: "Fondements de la cybersécurité", issuer: "Google", url: null, logo: "google.svg" },
+    { name: "Sécurité des réseaux informatique", issuer: "FUN-MOOC", url: null, logo: "fun-mooc.svg" },
+    { name: "Fondements de l'assistance technique", issuer: "Google", url: null, logo: "google.svg" },
+    { name: "Atelier RGPD", issuer: "Certification", url: null, logo: null },
   ],
 
   // Homelab — labo perso auto-hébergé sur Proxmox. Services listés = ceux réellement déployés.
