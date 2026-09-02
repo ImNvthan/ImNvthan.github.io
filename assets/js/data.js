@@ -3,7 +3,7 @@ const DATA = {
   profile: {
     name: "Nathan Drancourt",
     title: "Administrateur Systèmes & Réseaux",
-    tagline: "Je conçois, sécurise et documente des infrastructures fiables. Alternance d'un an à l'Automobile Club de l'Ouest, jusqu'en septembre 2026.",
+    tagline: "Passionné par l'informatique, spécialisé en systèmes et réseaux. Alternance d'un an à l'Automobile Club de l'Ouest, jusqu'en septembre 2026.",
     status: "Disponible dès octobre 2026",
     location: "Le Mans, France",
     email: "nathan.drancourt@outlook.fr",
@@ -28,9 +28,9 @@ const DATA = {
 
   experience: [
     {
-      date: "2025 — 2026",
+      date: "2025 - 2026",
       duration: "Sept. 2025 — Sept. 2026 · 12 mois",
-      role: "Alternant — Administrateur Système & Réseau",
+      role: "Alternant - Administrateur Système & Réseau",
       company: "Automobile Club de l'Ouest",
       tasks: [
         "Administration Windows Server, Linux et Microsoft 365",
@@ -43,7 +43,7 @@ const DATA = {
     },
     {
       date: "2025",
-      duration: "Janv. — Févr. · 2 mois",
+      duration: "Janv. - Févr. · 2 mois",
       role: "Stage — Technicien Système & Réseau",
       company: "Groupe Lelièvre",
       tasks: [
@@ -55,8 +55,8 @@ const DATA = {
     },
     {
       date: "2024",
-      duration: "Avr. — Juin · 3 mois",
-      role: "Stage — Technicien Système & Réseau",
+      duration: "Avr. - Juin · 3 mois",
+      role: "Stage - Technicien Système & Réseau",
       company: "Groupe Lelièvre",
       tasks: [
         "Refonte complète de l'installation réseau d'une agence",
@@ -66,8 +66,8 @@ const DATA = {
     },
     {
       date: "2022",
-      duration: "Mars — Mai · 3 mois",
-      role: "Stage — Technicien Système & Réseau",
+      duration: "Mars - Mai · 3 mois",
+      role: "Stage - Technicien Système & Réseau",
       company: "Groupe Lelièvre",
       tasks: [
         "Surveillance et maintenance du réseau informatique",
@@ -102,7 +102,7 @@ const DATA = {
       category: "Active Directory",
       org: "Automobile Club de l'Ouest",
       tags: ["PowerShell", "WPF / XAML", "Active Directory", "LDAP"],
-      link: null,
+      link: "https://github.com/ImNvthan/ad-master-toolkit",
     },
     {
       icon: "📊",
@@ -138,7 +138,7 @@ const DATA = {
       category: "Automatisation",
       org: "Automobile Club de l'Ouest",
       tags: ["Linux", "CRON", "GLPI", "Scripting"],
-      link: null,
+      link: "https://github.com/ImNvthan/glpi-ldap-sync",
     },
     {
       icon: "⚡",
@@ -217,12 +217,12 @@ const DATA = {
       ["Hyperviseur", "Proxmox VE"],
       ["Charge", "11 conteneurs LXC + 1 VM"],
       ["Réseau", "AdGuard Home · Nginx Proxy Manager"],
-      ["Supervision", "Uptime Kuma · Beszel"],
+      ["Supervision", "Uptime Kuma"],
     ],
     stack: [
       { group: "Virtualisation", items: ["Proxmox VE", "LXC", "Docker"] },
       { group: "Réseau & accès", items: ["AdGuard Home", "Nginx Proxy Manager", "Gluetun"] },
-      { group: "Supervision & sécurité", items: ["Uptime Kuma", "Beszel", "Glance", "Wazuh"] },
+      { group: "Supervision & sécurité", items: ["Uptime Kuma", "Glance"] },
       { group: "Services", items: ["Jellyfin", "FileBrowser"] },
     ],
   },
