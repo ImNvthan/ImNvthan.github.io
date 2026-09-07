@@ -225,8 +225,6 @@ const DATA = {
     { name: "Gérez votre parc informatique avec GLPI", issuer: "OpenClassrooms", url: "https://openclassrooms.com/fr/courses/1730516-gerez-votre-parc-informatique-avec-glpi", logo: "openclassrooms.svg" },
     { name: "Prenez le contrôle à distance d'un poste Linux/Windows avec VNC", issuer: "OpenClassrooms", url: "https://openclassrooms.com/fr/courses/1733046-prenez-le-controle-a-distance-d-un-poste-linux-windows-avec-vnc", logo: "openclassrooms.svg" },
     { name: "Atelier RGPD", issuer: "CNIL", url: "https://atelier-rgpd.cnil.fr/", logo: "atelier-rgpd.png" },
-        { name: "Atelier RGPD", issuer: "CNIL", url: "https://atelier-rgpd.cnil.fr/", logo: "atelier-rgpd.png" },
-
   ],
 
   // Homelab — labo perso auto-hébergé sur Proxmox. Services listés = ceux réellement déployés.
