@@ -23,7 +23,7 @@ const DATA = {
 
   about: [
     "Après un Bac Pro Systèmes Numériques (option SSIHT) et un BTS SIO option SISR, j'ai suivi un Bachelor Administrateur Systèmes &amp; Réseaux au CESI, en alternance à l'Automobile Club de l'Ouest de septembre 2025 à septembre 2026.",
-    "J'y ai administré des environnements Windows Server, Linux et Microsoft 365, géré l'Active Directory, déployé des équipements réseau et automatisé des process via GLPI, PowerShell et Power Automate. La documentation et la fiabilité des systèmes sont au cœur de ma façon de travailler.",
+    "J'y ai administré des environnements Windows Server, Linux et Microsoft 365, géré l'Active Directory, déployé des équipements réseau et automatisé des process via des scripts PowerShell/bash et Power Automate. La documentation sont au cœur de ma façon de travailler, je documente tout ce que je fait.",
   ],
 
   experience: [
@@ -36,9 +36,10 @@ const DATA = {
         "Administration Windows Server, Linux et Microsoft 365",
         "Active Directory : OU, GPO, comptes utilisateurs",
         "Installation &amp; configuration réseau : switchs, routeurs, bornes WiFi",
+        "Installation &amp; configuration postes utilisateurs : all in one, ordinateurs, téléphone portable
         "Supervision et support technique niveaux 1 &amp; 2",
         "Automatisation de process : GLPI, scripts, Power Automate",
-        "Documentation technique (procédures, notices)",
+        "Documentation technique (procédures, notices utilisateurs)",
       ],
     },
     {
@@ -50,7 +51,6 @@ const DATA = {
         "Mise en place d'un nouveau type de notification GLPI",
         "Campagne de sensibilisation au phishing",
         "Déploiement de postes de travail, support utilisateurs",
-        "Diagnostic et résolution d'incidents réseau",
       ],
     },
     {
@@ -70,7 +70,7 @@ const DATA = {
       role: "Stage - Technicien Système & Réseau",
       company: "Groupe Lelièvre",
       tasks: [
-        "Surveillance et maintenance du réseau informatique",
+        "Déploiement de postes de travail, support utilisateurs",
         "Mise en place d'un serveur de logs interne",
       ],
     },
@@ -78,11 +78,11 @@ const DATA = {
 
   skills: [
     { label: "Systèmes Windows / AD", level: 80 },
-    { label: "Linux", level: 75 },
-    { label: "Réseaux (VLAN, DNS, DHCP)", level: 75 },
+    { label: "Linux", level: 60 },
+    { label: "Réseaux (VLAN, DNS, DHCP)", level: 60 },
     { label: "GLPI & ITSM", level: 90 },
     { label: "Automatisation", level: 55 },
-    { label: "Cybersécurité", level: 50 },
+    { label: "Cybersécurité", level: 40 },
   ],
 
   projects: [
@@ -116,10 +116,10 @@ const DATA = {
     {
       icon: "📱",
       title: "Mobile Device Management (MDM)",
-      desc: "Mise en place d'une solution de Mobile Device Management permettant de centraliser la gestion et la sécurisation des appareils mobiles et postes utilisateurs.",
+      desc: "Mise en place d'une solution de Mobile Device Management permettant de centraliser la gestion et d'automatiser l'installation des appareils mobiles.",
       category: "Sécurité",
       org: "Automobile Club de l'Ouest",
-      tags: ["MDM", "Intune", "Sécurité"],
+      tags: ["MDM", "Intune", "Automatisation"],
       link: null,
     },
     {
@@ -188,9 +188,9 @@ const DATA = {
   ],
 
   education: [
-    { date: "Sept. 2025 — Sept. 2026", diploma: "Bachelor Administrateur Systèmes & Réseaux", school: "CESI, Le Mans" },
-    { date: "2023 — 2025", diploma: "BTS SIO, option SISR", school: "Lycée André Malraux" },
-    { date: "2021 — 2023", diploma: "Bac Pro Systèmes Numériques, option SSIHT", school: "Saint Joseph La Salle" },
+    { date: "Sept. 2025 - Sept. 2026", diploma: "Bachelor Administrateur Systèmes & Réseaux", school: "CESI, Le Mans" },
+    { date: "Sept. 2023 - Juin 2025", diploma: "BTS SIO, option SISR", school: "Lycée André Malraux" },
+    { date: "Sept. 2021 - Juin 2023", diploma: "Bac Pro Systèmes Numériques, option SSIHT", school: "Saint Joseph La Salle" },
   ],
 
   // Certifications. Pour chaque entrée :
@@ -215,15 +215,15 @@ const DATA = {
     hardware: [
       ["Machine", "Dell PowerEdge T410"],
       ["Hyperviseur", "Proxmox VE"],
-      ["Charge", "11 conteneurs LXC + 1 VM"],
-      ["Réseau", "AdGuard Home · Nginx Proxy Manager"],
-      ["Supervision", "Uptime Kuma"],
+      ["Charge", "11 conteneurs LXC"],
+    //   ["Réseau", "AdGuard Home · Nginx Proxy Manager"],
+   //    ["Supervision", "Uptime Kuma"],
     ],
     stack: [
       { group: "Virtualisation", items: ["Proxmox VE", "LXC", "Docker"] },
-      { group: "Réseau & accès", items: ["AdGuard Home", "Nginx Proxy Manager", "Gluetun"] },
+      { group: "Réseau & accès", items: ["AdGuard Home", "Nginx Proxy Manager"] },
       { group: "Supervision & sécurité", items: ["Uptime Kuma", "Glance"] },
-      { group: "Services", items: ["Jellyfin", "FileBrowser"] },
+      { group: "Services", items: ["Jellyfin", "Gluetun"] },
     ],
   },
 };
