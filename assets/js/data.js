@@ -36,7 +36,7 @@ const DATA = {
         "Administration Windows Server, Linux et Microsoft 365",
         "Active Directory : OU, GPO, comptes utilisateurs",
         "Installation &amp; configuration réseau : switchs, routeurs, bornes WiFi",
-        "Installation &amp; configuration postes utilisateurs : all in one, ordinateurs, téléphone portable
+        "Installation &amp; configuration postes utilisateurs : all in one, ordinateurs, téléphone portable,
         "Supervision et support technique niveaux 1 &amp; 2",
         "Automatisation de process : GLPI, scripts, Power Automate",
         "Documentation technique (procédures, notices utilisateurs)",
