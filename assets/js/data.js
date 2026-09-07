@@ -78,7 +78,7 @@ const DATA = {
 
   skills: [
     { label: "Systèmes Windows / AD", level: 80 },
-    { label: "Linux", level: 60 },
+    { label: "Linux", level: 75 },
     { label: "Réseaux (VLAN, DNS, DHCP)", level: 60 },
     { label: "GLPI & ITSM", level: 90 },
     { label: "Automatisation", level: 55 },
@@ -158,8 +158,26 @@ const DATA = {
       tags: ["GLPI", "Linux", "MySQL", "Documentation"],
       link: null,
     },
-    {
+        {
+      icon: "🚀",
+      title: "Docker – Site ",
+      desc: "Projet pour comprendre les bases de la conteneurisation et de mettre en pratique un premier déploiement reproductible et portable..",
+      category: "Conteneurisation",
+      org: "Personnel",
+      tags: ["Docker", "Conteneurisation", "NGINX"],
+      link: "https://github.com/ImNvthan/Docker-SiteWeb",
+    },
+                {
       icon: "🌐",
+      title: "WebSync - Site statique auto-déployé depuis GitHub",
+      desc: "Projet pour comprendre les bases du déploiement web automatisé (Cron, GIT).",
+      category: "Automatisation",
+      org: "Personnel",
+      tags: ["Automatisation", "CRON", "GIT"],
+      link: "https://github.com/ImNvthan/cron-site-sync",
+    },
+    {
+      icon: "🔀",
       title: "Migration pfSense → OPNsense",
       desc: "Refonte complète du réseau d'une agence incluant la migration du pare-feu pfSense vers OPNsense et la reconfiguration des règles de filtrage.",
       category: "Réseau",
@@ -197,21 +215,22 @@ const DATA = {
   //  - "url"  : le lien « Afficher le certificat » copié depuis LinkedIn (ou null s'il n'y en a pas).
   //  - "logo" : nom d'un fichier dans assets/certs/ (png, jpg ou svg). null => initiale de l'organisme.
   certifications: [
-    { name: "Administrez un système Linux", issuer: "OpenClassrooms", url: "https://openclassrooms.com/fr/courses/7274161-administrez-un-systeme-linux", logo: "openclassrooms.svg" },
-    { name: "Découvrez le cloud avec Amazon Web Services", issuer: "OpenClassrooms", url: "https://openclassrooms.com/fr/courses/4810836-decouvrez-le-cloud-avec-amazon-web-services", logo: "openclassrooms.svg" },
-    { name: "Prenez le contrôle à distance d'un poste Linux/Windows avec VNC", issuer: "OpenClassrooms", url: "https://openclassrooms.com/fr/courses/1733046-prenez-le-controle-a-distance-d-un-poste-linux-windows-avec-vnc", logo: "openclassrooms.svg" },
-    { name: "Gérez votre parc informatique avec GLPI", issuer: "OpenClassrooms", url: "https://openclassrooms.com/fr/courses/1730516-gerez-votre-parc-informatique-avec-glpi", logo: "openclassrooms.svg" },
     { name: "Administration système et infrastructure IT", issuer: "Google", url: "https://www.coursera.org/account/accomplishments/verify/WO8M24SEOEP0", logo: "google.svg" },
     { name: "Fondements de la cybersécurité", issuer: "Google", url: "https://www.coursera.org/account/accomplishments/verify/7HJJL3ZM4JKY", logo: "google.svg" },
-    { name: "Sécurité des réseaux informatique", issuer: "FUN-MOOC", url: "https://www.fun-mooc.fr/fr/cours/securite-des-reseaux-informatiques/", logo: "fun-mooc.svg" },
+    { name: "Fondements de la cybersécurité", issuer: "Google", url: "https://www.coursera.org/account/accomplishments/verify/7HJJL3ZM4JKY", logo: "google.svg" },
     { name: "Fondements de l'assistance technique", issuer: "Google", url: "https://www.coursera.org/account/accomplishments/verify/5182IEH0E1EE", logo: "google.svg" },
+    { name: "Sécurité des réseaux informatique", issuer: "FUN-MOOC", url: "https://www.fun-mooc.fr/fr/cours/securite-des-reseaux-informatiques/", logo: "fun-mooc.svg" },
+    { name: "Découvrez le cloud avec Amazon Web Services", issuer: "OpenClassrooms", url: "https://openclassrooms.com/fr/courses/4810836-decouvrez-le-cloud-avec-amazon-web-services", logo: "openclassrooms.svg" },
+    { name: "Administrez un système Linux", issuer: "OpenClassrooms", url: "https://openclassrooms.com/fr/courses/7274161-administrez-un-systeme-linux", logo: "openclassrooms.svg" },
+    { name: "Gérez votre parc informatique avec GLPI", issuer: "OpenClassrooms", url: "https://openclassrooms.com/fr/courses/1730516-gerez-votre-parc-informatique-avec-glpi", logo: "openclassrooms.svg" },
+    { name: "Prenez le contrôle à distance d'un poste Linux/Windows avec VNC", issuer: "OpenClassrooms", url: "https://openclassrooms.com/fr/courses/1733046-prenez-le-controle-a-distance-d-un-poste-linux-windows-avec-vnc", logo: "openclassrooms.svg" },
     { name: "Atelier RGPD", issuer: "CNIL", url: "https://atelier-rgpd.cnil.fr/", logo: "atelier-rgpd.png" },
   ],
 
   // Homelab — labo perso auto-hébergé sur Proxmox. Services listés = ceux réellement déployés.
   homelab: {
     intro:
-      "À la maison, un Dell PowerEdge T410 sous Proxmox VE héberge une douzaine de services en conteneurs LXC : DNS filtrant, reverse proxy, supervision, SIEM, média… C'est mon terrain d'essai.",
+      "À la maison, un Dell PowerEdge T410 sous Proxmox VE héberge une douzaine de services en conteneurs LXC : DNS filtrant, reverse proxy, supervision... C'est mon terrain d'essai.",
     hardware: [
       ["Machine", "Dell PowerEdge T410"],
       ["Hyperviseur", "Proxmox VE"],
@@ -222,8 +241,9 @@ const DATA = {
     stack: [
       { group: "Virtualisation", items: ["Proxmox VE", "LXC", "Docker"] },
       { group: "Réseau & accès", items: ["AdGuard Home", "Nginx Proxy Manager"] },
-      { group: "Supervision & sécurité", items: ["Uptime Kuma", "Glance"] },
-      { group: "Services", items: ["Jellyfin", "Gluetun"] },
+      { group: "Supervision", items: ["Uptime Kuma", "Glance"] },
+      // { group: "Média", items: ["Jellyfin", "Gluetun"] },
+     // { group: "Services", items: ["xxx", "xxx"] },
     ],
   },
 };
