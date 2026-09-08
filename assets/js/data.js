@@ -3,7 +3,7 @@ const DATA = {
   profile: {
     name: "Nathan Drancourt",
     title: "Administrateur Systèmes & Réseaux",
-    tagline: "Passionné par l'informatique, spécialisé en systèmes et réseaux. Alternance d'un an à l'Automobile Club de l'Ouest.",
+    tagline: "Je conçois, sécurise et documente des infrastructures fiables. Alternance d'un an à l'Automobile Club de l'Ouest, jusqu'en septembre 2026.",
     status: "Disponible dès octobre 2026",
     location: "Le Mans, France",
     email: "nathan.drancourt@outlook.fr",
@@ -17,46 +17,46 @@ const DATA = {
   stats: [
     { value: 12, suffix: "", label: "mois en alternance" },
     { value: 11, suffix: "", label: "projets aboutis" },
-    { value: 9, suffix: "", label: "certifications" },
+    { value: 5, suffix: "", label: "certifications" },
     { value: 12, suffix: "", label: "services auto-hébergés" },
   ],
 
   about: [
     "Après un Bac Pro Systèmes Numériques (option SSIHT) et un BTS SIO option SISR, j'ai suivi un Bachelor Administrateur Systèmes &amp; Réseaux au CESI, en alternance à l'Automobile Club de l'Ouest de septembre 2025 à septembre 2026.",
-    "J'y ai administré des environnements Windows Server, Linux et Microsoft 365, géré l'Active Directory, déployé des équipements réseau et automatisé des process via des scripts PowerShell/bash et Power Automate. La documentation sont au cœur de ma façon de travailler, je documente tout ce que je fait.",
+    "J'y ai administré des environnements Windows Server, Linux et Microsoft 365, géré l'Active Directory, déployé des équipements réseau et automatisé des process via GLPI, PowerShell et Power Automate. La documentation et la fiabilité des systèmes sont au cœur de ma façon de travailler.",
   ],
 
   experience: [
     {
-      date: "2025 - 2026",
+      date: "2025 — 2026",
       duration: "Sept. 2025 — Sept. 2026 · 12 mois",
-      role: "Alternant - Administrateur Système & Réseau",
+      role: "Alternant — Administrateur Système & Réseau",
       company: "Automobile Club de l'Ouest",
       tasks: [
         "Administration Windows Server, Linux et Microsoft 365",
         "Active Directory : OU, GPO, comptes utilisateurs",
         "Installation &amp; configuration réseau : switchs, routeurs, bornes WiFi",
-        "Installation &amp; configuration postes utilisateurs : all in one, ordinateurs, téléphone portable",
         "Supervision et support technique niveaux 1 &amp; 2",
         "Automatisation de process : GLPI, scripts, Power Automate",
-        "Documentation technique (procédures, notices utilisateurs)",
+        "Documentation technique (procédures, notices)",
       ],
     },
     {
       date: "2025",
-      duration: "Janv. - Févr. · 2 mois",
+      duration: "Janv. — Févr. · 2 mois",
       role: "Stage — Technicien Système & Réseau",
       company: "Groupe Lelièvre",
       tasks: [
         "Mise en place d'un nouveau type de notification GLPI",
         "Campagne de sensibilisation au phishing",
         "Déploiement de postes de travail, support utilisateurs",
+        "Diagnostic et résolution d'incidents réseau",
       ],
     },
     {
       date: "2024",
-      duration: "Avr. - Juin · 3 mois",
-      role: "Stage - Technicien Système & Réseau",
+      duration: "Avr. — Juin · 3 mois",
+      role: "Stage — Technicien Système & Réseau",
       company: "Groupe Lelièvre",
       tasks: [
         "Refonte complète de l'installation réseau d'une agence",
@@ -66,11 +66,11 @@ const DATA = {
     },
     {
       date: "2022",
-      duration: "Mars - Mai · 3 mois",
-      role: "Stage - Technicien Système & Réseau",
+      duration: "Mars — Mai · 3 mois",
+      role: "Stage — Technicien Système & Réseau",
       company: "Groupe Lelièvre",
       tasks: [
-        "Déploiement de postes de travail, support utilisateurs",
+        "Surveillance et maintenance du réseau informatique",
         "Mise en place d'un serveur de logs interne",
       ],
     },
@@ -79,10 +79,10 @@ const DATA = {
   skills: [
     { label: "Systèmes Windows / AD", level: 80 },
     { label: "Linux", level: 75 },
-    { label: "Réseaux (VLAN, DNS, DHCP)", level: 60 },
+    { label: "Réseaux (VLAN, DNS, DHCP)", level: 75 },
     { label: "GLPI & ITSM", level: 90 },
     { label: "Automatisation", level: 55 },
-    { label: "Cybersécurité", level: 40 },
+    { label: "Cybersécurité", level: 50 },
   ],
 
   projects: [
@@ -102,7 +102,7 @@ const DATA = {
       category: "Active Directory",
       org: "Automobile Club de l'Ouest",
       tags: ["PowerShell", "WPF / XAML", "Active Directory", "LDAP"],
-      link: "https://github.com/ImNvthan/ad-master-toolkit",
+      link: null,
     },
     {
       icon: "📊",
@@ -116,10 +116,10 @@ const DATA = {
     {
       icon: "📱",
       title: "Mobile Device Management (MDM)",
-      desc: "Mise en place d'une solution de Mobile Device Management permettant de centraliser la gestion et d'automatiser l'installation des appareils mobiles.",
+      desc: "Mise en place d'une solution de Mobile Device Management permettant de centraliser la gestion et la sécurisation des appareils mobiles et postes utilisateurs.",
       category: "Sécurité",
       org: "Automobile Club de l'Ouest",
-      tags: ["MDM", "Intune", "Automatisation"],
+      tags: ["MDM", "Intune", "Sécurité"],
       link: null,
     },
     {
@@ -138,7 +138,7 @@ const DATA = {
       category: "Automatisation",
       org: "Automobile Club de l'Ouest",
       tags: ["Linux", "CRON", "GLPI", "Scripting"],
-      link: "https://github.com/ImNvthan/glpi-ldap-sync",
+      link: null,
     },
     {
       icon: "⚡",
@@ -158,26 +158,8 @@ const DATA = {
       tags: ["GLPI", "Linux", "MySQL", "Documentation"],
       link: null,
     },
-        {
-      icon: "🚀",
-      title: "Docker – Site ",
-      desc: "Projet pour comprendre les bases de la conteneurisation et de mettre en pratique un premier déploiement reproductible et portable..",
-      category: "Conteneurisation",
-      org: "Personnel",
-      tags: ["Docker", "Conteneurisation", "NGINX"],
-      link: "https://github.com/ImNvthan/Docker-SiteWeb",
-    },
-                {
-      icon: "🌐",
-      title: "WebSync - Site statique auto-déployé depuis GitHub",
-      desc: "Projet pour comprendre les bases du déploiement web automatisé (Cron, GIT).",
-      category: "Automatisation",
-      org: "Personnel",
-      tags: ["Automatisation", "CRON", "GIT"],
-      link: "https://github.com/ImNvthan/cron-site-sync",
-    },
     {
-      icon: "🔀",
+      icon: "🌐",
       title: "Migration pfSense → OPNsense",
       desc: "Refonte complète du réseau d'une agence incluant la migration du pare-feu pfSense vers OPNsense et la reconfiguration des règles de filtrage.",
       category: "Réseau",
@@ -206,9 +188,9 @@ const DATA = {
   ],
 
   education: [
-    { date: "Sept. 2025 - Sept. 2026", diploma: "Bachelor Administrateur Systèmes & Réseaux", school: "CESI, Le Mans" },
-    { date: "Sept. 2023 - Juin 2025", diploma: "BTS SIO, option SISR", school: "Lycée André Malraux" },
-    { date: "Sept. 2021 - Juin 2023", diploma: "Bac Pro Systèmes Numériques, option SSIHT", school: "Saint Joseph La Salle" },
+    { date: "Sept. 2025 — Sept. 2026", diploma: "Bachelor Administrateur Systèmes & Réseaux", school: "CESI, Le Mans" },
+    { date: "2023 — 2025", diploma: "BTS SIO, option SISR", school: "Lycée André Malraux" },
+    { date: "2021 — 2023", diploma: "Bac Pro Systèmes Numériques, option SSIHT", school: "Saint Joseph La Salle" },
   ],
 
   // Certifications. Pour chaque entrée :
@@ -217,33 +199,36 @@ const DATA = {
   certifications: [
     { name: "Administration système et infrastructure IT", issuer: "Google", url: "https://www.coursera.org/account/accomplishments/verify/WO8M24SEOEP0", logo: "google.svg" },
     { name: "Fondements de la cybersécurité", issuer: "Google", url: "https://www.coursera.org/account/accomplishments/verify/7HJJL3ZM4JKY", logo: "google.svg" },
-    { name: "Fondements de la cybersécurité", issuer: "Google", url: "https://www.coursera.org/account/accomplishments/verify/7HJJL3ZM4JKY", logo: "google.svg" },
-    { name: "Fondements de l'assistance technique", issuer: "Google", url: "https://www.coursera.org/account/accomplishments/verify/5182IEH0E1EE", logo: "google.svg" },
     { name: "Sécurité des réseaux informatique", issuer: "FUN-MOOC", url: "https://www.fun-mooc.fr/fr/cours/securite-des-reseaux-informatiques/", logo: "fun-mooc.svg" },
-    { name: "Découvrez le cloud avec Amazon Web Services", issuer: "OpenClassrooms", url: "https://openclassrooms.com/fr/courses/4810836-decouvrez-le-cloud-avec-amazon-web-services", logo: "openclassrooms.svg" },
-    { name: "Administrez un système Linux", issuer: "OpenClassrooms", url: "https://openclassrooms.com/fr/courses/7274161-administrez-un-systeme-linux", logo: "openclassrooms.svg" },
-    { name: "Gérez votre parc informatique avec GLPI", issuer: "OpenClassrooms", url: "https://openclassrooms.com/fr/courses/1730516-gerez-votre-parc-informatique-avec-glpi", logo: "openclassrooms.svg" },
-    { name: "Prenez le contrôle à distance d'un poste Linux/Windows avec VNC", issuer: "OpenClassrooms", url: "https://openclassrooms.com/fr/courses/1733046-prenez-le-controle-a-distance-d-un-poste-linux-windows-avec-vnc", logo: "openclassrooms.svg" },
+    { name: "Fondements de l'assistance technique", issuer: "Google", url: "https://www.coursera.org/account/accomplishments/verify/5182IEH0E1EE", logo: "google.svg" },
     { name: "Atelier RGPD", issuer: "CNIL", url: "https://atelier-rgpd.cnil.fr/", logo: "atelier-rgpd.png" },
+  ],
+
+  // Formations suivies (OpenClassrooms) — parcours de cours, sans certification à la clé.
+  // Même structure que "certifications" : name, issuer, url, logo.
+  formations: [
+    { name: "Administrez un système Linux", issuer: "OpenClassrooms", url: "https://openclassrooms.com/fr/courses/7274161-administrez-un-systeme-linux", logo: "openclassrooms.svg" },
+    { name: "Découvrez le cloud avec Amazon Web Services", issuer: "OpenClassrooms", url: "https://openclassrooms.com/fr/courses/4810836-decouvrez-le-cloud-avec-amazon-web-services", logo: "openclassrooms.svg" },
+    { name: "Prenez le contrôle à distance d'un poste Linux/Windows avec VNC", issuer: "OpenClassrooms", url: "https://openclassrooms.com/fr/courses/1733046-prenez-le-controle-a-distance-d-un-poste-linux-windows-avec-vnc", logo: "openclassrooms.svg" },
+    { name: "Gérez votre parc informatique avec GLPI", issuer: "OpenClassrooms", url: "https://openclassrooms.com/fr/courses/1730516-gerez-votre-parc-informatique-avec-glpi", logo: "openclassrooms.svg" },
   ],
 
   // Homelab — labo perso auto-hébergé sur Proxmox. Services listés = ceux réellement déployés.
   homelab: {
     intro:
-      "À la maison, un Dell PowerEdge T410 sous Proxmox VE héberge une douzaine de services en conteneurs LXC : DNS filtrant, reverse proxy, supervision... C'est mon terrain d'essai.",
+      "À la maison, un Dell PowerEdge T410 sous Proxmox VE héberge une douzaine de services en conteneurs LXC : DNS filtrant, reverse proxy, supervision, SIEM, média… C'est mon terrain d'essai — j'y déploie, casse et documente les mêmes briques qu'en production.",
     hardware: [
       ["Machine", "Dell PowerEdge T410"],
       ["Hyperviseur", "Proxmox VE"],
-      ["Charge", "11 conteneurs LXC"],
-    //   ["Réseau", "AdGuard Home · Nginx Proxy Manager"],
-   //    ["Supervision", "Uptime Kuma"],
+      ["Charge", "11 conteneurs LXC + 1 VM"],
+      ["Réseau", "AdGuard Home · Nginx Proxy Manager"],
+      ["Supervision", "Uptime Kuma · Beszel · Wazuh"],
     ],
     stack: [
       { group: "Virtualisation", items: ["Proxmox VE", "LXC", "Docker"] },
-      { group: "Réseau & accès", items: ["AdGuard Home", "Nginx Proxy Manager"] },
-      { group: "Supervision", items: ["Uptime Kuma", "Glance"] },
-      // { group: "Média", items: ["Jellyfin", "Gluetun"] },
-     // { group: "Services", items: ["xxx", "xxx"] },
+      { group: "Réseau & accès", items: ["AdGuard Home", "Nginx Proxy Manager", "Gluetun"] },
+      { group: "Supervision & sécurité", items: ["Uptime Kuma", "Beszel", "Glance", "Wazuh"] },
+      { group: "Services", items: ["Jellyfin", "FileBrowser"] },
     ],
   },
 };
