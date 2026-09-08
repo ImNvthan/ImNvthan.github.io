@@ -23,7 +23,7 @@ const DATA = {
 
   about: [
     "Après un Bac Pro Systèmes Numériques (option SSIHT) et un BTS SIO option SISR, j'ai suivi un Bachelor Administrateur Systèmes &amp; Réseaux au CESI, en alternance à l'Automobile Club de l'Ouest de septembre 2025 à septembre 2026.",
-    "J'y ai administré des environnements Windows Server, Linux et Microsoft 365, géré l'Active Directory, déployé des équipements réseau et automatisé des process via GLPI, PowerShell et Power Automate. La documentation et la fiabilité des systèmes sont au cœur de ma façon de travailler.",
+    "J'y ai administré des environnements Windows Server, Linux et Microsoft 365, géré l'Active Directory, déployé des équipements réseau et automatisé des process via GLPI, PowerShell et Power Automate. La documentation est au cœur de ma façon de travailler.",
   ],
 
   experience: [
@@ -220,15 +220,15 @@ const DATA = {
     hardware: [
       ["Machine", "Dell PowerEdge T410"],
       ["Hyperviseur", "Proxmox VE"],
-      ["Charge", "11 conteneurs LXC + 1 VM"],
+      ["Charge", "11 conteneurs LXC"],
       ["Réseau", "AdGuard Home · Nginx Proxy Manager"],
-      ["Supervision", "Uptime Kuma · Beszel · Wazuh"],
+      //["Supervision", "Uptime Kuma · Beszel · Wazuh"],
     ],
     stack: [
       { group: "Virtualisation", items: ["Proxmox VE", "LXC", "Docker"] },
-      { group: "Réseau & accès", items: ["AdGuard Home", "Nginx Proxy Manager", "Gluetun"] },
-      { group: "Supervision & sécurité", items: ["Uptime Kuma", "Beszel", "Glance", "Wazuh"] },
-      { group: "Services", items: ["Jellyfin", "FileBrowser"] },
+      { group: "Réseau & accès", items: ["AdGuard Home", "Nginx Proxy Manager"] },
+      { group: "Supervision & sécurité", items: ["Uptime Kuma", "Glance"] },
+    //  { group: "Services", items: ["Jellyfin", "FileBrowser"] },
     ],
   },
 };
