@@ -102,7 +102,7 @@ const DATA = {
       category: "Active Directory",
       org: "Automobile Club de l'Ouest",
       tags: ["PowerShell", "WPF / XAML", "Active Directory", "LDAP"],
-      link: null,
+      link: "https://github.com/ImNvthan/ad-master-toolkit",
     },
     {
       icon: "📊",
@@ -138,7 +138,7 @@ const DATA = {
       category: "Automatisation",
       org: "Automobile Club de l'Ouest",
       tags: ["Linux", "CRON", "GLPI", "Scripting"],
-      link: null,
+      link: "https://github.com/ImNvthan/glpi-ldap-sync",
     },
     {
       icon: "⚡",
@@ -188,7 +188,7 @@ const DATA = {
   ],
 
   education: [
-    { date: "Sept. 2025 — Sept. 2026", diploma: "Bachelor Administrateur Systèmes & Réseaux", school: "CESI, Le Mans" },
+    { date: "2025 — 2026", diploma: "Bachelor Administrateur Systèmes & Réseaux", school: "CESI, Le Mans" },
     { date: "2023 — 2025", diploma: "BTS SIO, option SISR", school: "Lycée André Malraux" },
     { date: "2021 — 2023", diploma: "Bac Pro Systèmes Numériques, option SSIHT", school: "Saint Joseph La Salle" },
   ],
@@ -221,8 +221,7 @@ const DATA = {
       ["Machine", "Dell PowerEdge T410"],
       ["Hyperviseur", "Proxmox VE"],
       ["Charge", "11 conteneurs LXC"],
-      ["Réseau", "AdGuard Home · Nginx Proxy Manager"],
-      //["Supervision", "Uptime Kuma · Beszel · Wazuh"],
+
     ],
     stack: [
       { group: "Virtualisation", items: ["Proxmox VE", "LXC", "Docker"] },
