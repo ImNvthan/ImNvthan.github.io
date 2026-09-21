@@ -70,8 +70,20 @@ function renderContent() {
 
   const equipmentStack = document.getElementById("equipmentStack");
   (DATA.equipment || []).forEach(g => {
-    const chips = el("div", { class: "stack-chips" });
-    g.items.forEach(it => chips.appendChild(el("span", { text: it })));
+    const chips = el("div", { class: "equip-chips" });
+    g.items.forEach(it => {
+      const mkFallback = () => el("span", {
+        class: "equip-logo equip-logo--txt", "aria-hidden": "true",
+        text: (it.name || "•").charAt(0).toUpperCase(),
+      });
+      const logo = it.logo
+        ? el("img", {
+            class: "equip-logo", src: "assets/equipment/" + it.logo, alt: "", loading: "lazy",
+            onerror: function () { this.replaceWith(mkFallback()); },
+          })
+        : mkFallback();
+      chips.appendChild(el("span", { class: "equip-chip" }, [logo, el("span", { text: it.name })]));
+    });
     equipmentStack.appendChild(el("div", { class: "stack-group reveal" }, [
       el("h3", { text: g.group }),
       chips,

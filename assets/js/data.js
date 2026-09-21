@@ -86,12 +86,29 @@ const DATA = {
   ],
 
   // Constructeurs et technologies rencontrés en stage/alternance (matériel et solutions manipulés directement).
+  // logo => fichier dans assets/equipment/ (svg). null => initiale du nom.
   equipment: [
-    { group: "Réseau", items: ["Cisco", "Huawei", "Ruckus"] },
-    { group: "Sécurité & Firewall", items: ["pfSense", "OPNsense"] },
-    { group: "Serveurs & Virtualisation", items: ["Dell PowerEdge", "Proxmox VE"] },
-    { group: "Cloud & Productivité", items: ["Microsoft 365", "Active Directory", "Intune"] },
-    { group: "ITSM", items: ["GLPI"] },
+    { group: "Réseau", items: [
+      { name: "Cisco", logo: "cisco.svg" },
+      { name: "Huawei", logo: "huawei.svg" },
+      { name: "Ruckus", logo: "ruckus.svg" },
+    ] },
+    { group: "Sécurité & Firewall", items: [
+      { name: "pfSense", logo: "pfsense.svg" },
+      { name: "OPNsense", logo: "opnsense.svg" },
+    ] },
+    { group: "Serveurs & Virtualisation", items: [
+      { name: "Dell PowerEdge", logo: "dell.svg" },
+      { name: "Proxmox VE", logo: "proxmox.svg" },
+    ] },
+    { group: "Cloud & Productivité", items: [
+      { name: "Microsoft 365", logo: "m365.svg" },
+      { name: "Active Directory", logo: "ad.svg" },
+      { name: "Intune", logo: "intune.svg" },
+    ] },
+    { group: "ITSM", items: [
+      { name: "GLPI", logo: "glpi.svg" },
+    ] },
   ],
 
   projects: [
