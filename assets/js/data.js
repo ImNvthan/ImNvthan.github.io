@@ -85,6 +85,15 @@ const DATA = {
     { label: "Cybersécurité", level: 50 },
   ],
 
+  // Constructeurs et technologies rencontrés en stage/alternance (matériel et solutions manipulés directement).
+  equipment: [
+    { group: "Réseau", items: ["Cisco", "Huawei", "Ruckus"] },
+    { group: "Sécurité & Firewall", items: ["pfSense", "OPNsense"] },
+    { group: "Serveurs & Virtualisation", items: ["Dell PowerEdge", "Proxmox VE"] },
+    { group: "Cloud & Productivité", items: ["Microsoft 365", "Active Directory", "Intune"] },
+    { group: "ITSM", items: ["GLPI"] },
+  ],
+
   projects: [
     {
       icon: "⚙️",

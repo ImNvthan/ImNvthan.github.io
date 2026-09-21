@@ -68,6 +68,16 @@ function renderContent() {
     ]));
   });
 
+  const equipmentStack = document.getElementById("equipmentStack");
+  (DATA.equipment || []).forEach(g => {
+    const chips = el("div", { class: "stack-chips" });
+    g.items.forEach(it => chips.appendChild(el("span", { text: it })));
+    equipmentStack.appendChild(el("div", { class: "stack-group reveal" }, [
+      el("h3", { text: g.group }),
+      chips,
+    ]));
+  });
+
   const grid = document.getElementById("projectGrid");
   DATA.projects.forEach(pr => {
     const tags = el("div", { class: "tag-row" });
