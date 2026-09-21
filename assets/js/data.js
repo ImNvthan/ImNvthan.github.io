@@ -92,19 +92,29 @@ const DATA = {
       { name: "Cisco", logo: "cisco.svg" },
       { name: "Huawei", logo: "huawei.svg" },
       { name: "Ruckus", logo: "ruckus.svg" },
+      { name: "Aruba", logo: "aruba.svg" },
     ] },
     { group: "Sécurité & Firewall", items: [
       { name: "pfSense", logo: "pfsense.svg" },
       { name: "OPNsense", logo: "opnsense.svg" },
+      { name: "Fortinet", logo: "fortinet.svg" },
     ] },
     { group: "Serveurs & Virtualisation", items: [
       { name: "Dell PowerEdge", logo: "dell.svg" },
+      { name: "HPE", logo: "hpe.svg" },
       { name: "Proxmox VE", logo: "proxmox.svg" },
+      { name: "VMware", logo: "vmware.svg" },
+    ] },
+    { group: "Systèmes & Scripting", items: [
+      { name: "Windows Server", logo: "winserver.svg" },
+      { name: "Debian", logo: "debian.svg" },
+      { name: "PowerShell", logo: "powershell.svg" },
     ] },
     { group: "Cloud & Productivité", items: [
       { name: "Microsoft 365", logo: "m365.svg" },
       { name: "Active Directory", logo: "ad.svg" },
       { name: "Intune", logo: "intune.svg" },
+      { name: "Power Automate", logo: "powerautomate.svg" },
     ] },
     { group: "ITSM", items: [
       { name: "GLPI", logo: "glpi.svg" },
