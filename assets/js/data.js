@@ -86,6 +86,7 @@ const DATA = {
     { label: "Support & assistance utilisateurs", level: 70 },
     { label: "Automatisation", level: 55 },
     { label: "Cybersécurité", level: 50 },
+    { label: "RGPD & conformité (CNIL)", level: 55 },
   ],
 
   // Constructeurs et technologies rencontrés en stage/alternance (matériel et solutions manipulés directement).
@@ -99,11 +100,14 @@ const DATA = {
     { group: "Sécurité & Firewall", items: [
       { name: "pfSense", logo: "pfsense.svg" },
       { name: "OPNsense", logo: "opnsense.svg" },
+      { name: "VPN", logo: "vpn.svg" },
     ] },
     { group: "Serveurs & Virtualisation", items: [
       { name: "Dell PowerEdge", logo: "dell.svg" },
       { name: "Proxmox VE", logo: "proxmox.svg" },
       { name: "VMware", logo: "vmware.svg" },
+      { name: "VirtualBox", logo: "virtualbox.svg" },
+      { name: "Docker", logo: "docker.svg" },
     ] },
     { group: "Systèmes & Scripting", items: [
       { name: "Windows Server", logo: "winserver.svg" },
@@ -115,6 +119,7 @@ const DATA = {
       { name: "Active Directory", logo: "ad.svg" },
       { name: "Intune", logo: "intune.svg" },
       { name: "Power Automate", logo: "powerautomate.svg" },
+      { name: "Canva", logo: "canva.svg" },
     ] },
     { group: "ITSM", items: [
       { name: "GLPI", logo: "glpi.svg" },
