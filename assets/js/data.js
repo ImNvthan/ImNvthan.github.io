@@ -95,16 +95,13 @@ const DATA = {
       { name: "Cisco", logo: "cisco.svg" },
       { name: "Huawei", logo: "huawei.svg" },
       { name: "Ruckus", logo: "ruckus.svg" },
-      { name: "Aruba", logo: "aruba.svg" },
     ] },
     { group: "Sécurité & Firewall", items: [
       { name: "pfSense", logo: "pfsense.svg" },
       { name: "OPNsense", logo: "opnsense.svg" },
-      { name: "Fortinet", logo: "fortinet.svg" },
     ] },
     { group: "Serveurs & Virtualisation", items: [
       { name: "Dell PowerEdge", logo: "dell.svg" },
-      { name: "HPE", logo: "hpe.svg" },
       { name: "Proxmox VE", logo: "proxmox.svg" },
       { name: "VMware", logo: "vmware.svg" },
     ] },
