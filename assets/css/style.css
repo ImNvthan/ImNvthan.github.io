@@ -218,11 +218,11 @@ a.cert-item:hover { border-color: #ffffff33; transform: translateX(3px); }
   border-radius: 8px;
 }
 .equip-logo {
-  width: 26px; height: 26px; flex-shrink: 0; border-radius: 6px; object-fit: contain;
-  background: #ffffff10; padding: 3px;
+  width: 30px; height: 30px; flex-shrink: 0; border-radius: 7px; object-fit: contain;
+  background: #f4f6f5; padding: 5px;
 }
 .equip-logo--txt {
-  display: flex; align-items: center; justify-content: center; padding: 0;
+  display: flex; align-items: center; justify-content: center; padding: 0; background: #ffffff10;
   font-family: var(--font-display); font-weight: 700; color: var(--accent); font-size: 0.9rem;
 }
 
