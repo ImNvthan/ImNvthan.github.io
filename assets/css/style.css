@@ -267,4 +267,4 @@ a.cert-item:hover { border-color: #ffffff33; transform: translateX(3px); }
   .contact-row { flex-direction: column; align-items: flex-start; gap: 1.4rem; }
   .project-grid { grid-template-columns: 1fr; }
 }
-.equip-logo[src$="ruckus.png"] { width: 72px; }
+.equip-logo[src$="ruckus.jpg"] { width: 96px; height: 40px; padding: 2px; }

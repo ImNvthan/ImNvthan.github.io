@@ -94,7 +94,7 @@ const DATA = {
     { group: "Réseau", items: [
       { name: "Cisco", logo: "cisco.svg" },
       { name: "Huawei", logo: "huawei.svg" },
-      { name: "Ruckus", logo: "ruckus.png" },
+      { name: "Ruckus", logo: "ruckus.jpg" },
     ] },
     { group: "Sécurité & Firewall", items: [
       { name: "pfSense", logo: "pfsense.svg" },
