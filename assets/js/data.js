@@ -3,7 +3,7 @@ const DATA = {
   profile: {
     name: "Nathan Drancourt",
     title: "Administrateur Systèmes & Réseaux",
-    tagline: "Alternant administrateur systèmes & réseaux, à l'aise aussi bien sur un serveur que devant un utilisateur en difficulté.",
+    tagline: "J'administre des serveurs, des comptes et des réseaux au quotidien, et j'aime comprendre assez en profondeur ce que je mets en place pour pouvoir l'expliquer à quelqu'un d'autre.",
     status: "Disponible dès octobre 2026",
     location: "Le Mans, France",
     email: "nathan.drancourt@outlook.fr",
