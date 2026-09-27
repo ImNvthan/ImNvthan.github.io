@@ -9,6 +9,7 @@ const DATA = {
     email: "nathan.drancourt@outlook.fr",
     linkedin: "https://www.linkedin.com/in/nathan-drancourt/",
     github: "https://github.com/ImNvthan",
+    rootme: "https://www.root-me.org/Nvthan?lang=fr",
     cvPdf: "CV-Nathan-Drancourt.pdf",
     cvImage: "CV-Nathan-Drancourt.png",
   },
