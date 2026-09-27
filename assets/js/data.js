@@ -102,11 +102,11 @@ const DATA = {
       { name: "OPNsense", logo: "opnsense.svg" },
     ] },
     { group: "Serveurs & Virtualisation", items: [
-      { name: "Dell PowerEdge", logo: "dell.svg" },
       { name: "Proxmox VE", logo: "proxmox.svg" },
       { name: "VMware Workstation Pro", logo: "vmware.svg" },
       { name: "VirtualBox", logo: "virtualbox.svg" },
       { name: "Docker", logo: "docker.svg" },
+      { name: "AWS", logo: "aws.svg" },
     ] },
     { group: "Systèmes & Scripting", items: [
       { name: "Windows Server", logo: "winserver.svg" },
@@ -121,7 +121,6 @@ const DATA = {
       { name: "Active Directory", logo: "ad.svg" },
       { name: "Intune", logo: "intune.svg" },
       { name: "Power Automate", logo: "powerautomate.svg" },
-      { name: "AWS", logo: "aws.svg" },
     ] },
     { group: "ITSM", items: [
       { name: "GLPI", logo: "glpi.svg" },
