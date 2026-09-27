@@ -3,7 +3,7 @@ const DATA = {
   profile: {
     name: "Nathan Drancourt",
     title: "Administrateur Systèmes & Réseaux",
-  //  tagline: "Je conçois, sécurise et documente des infrastructures fiables. Alternance d'un an à l'Automobile Club de l'Ouest, jusqu'en septembre 2026.",
+    tagline: "Je conçois, sécurise et documente des infrastructures fiables. Alternance d'un an à l'Automobile Club de l'Ouest, jusqu'en septembre 2026.",
     status: "Disponible dès octobre 2026",
     location: "Le Mans, France",
     email: "nathan.drancourt@outlook.fr",
@@ -28,9 +28,9 @@ const DATA = {
 
   experience: [
     {
-      date: "2025 - 2026",
-      duration: "Sept. 2025 - Sept. 2026 · 12 mois",
-      role: "Alternant - Administrateur Système & Réseau",
+      date: "2025 — 2026",
+      duration: "Sept. 2025 — Sept. 2026 · 12 mois",
+      role: "Alternant — Administrateur Système & Réseau",
       company: "Automobile Club de l'Ouest",
       tasks: [
         "Administration Windows Server, Linux et Microsoft 365",
@@ -43,7 +43,7 @@ const DATA = {
     },
     {
       date: "2025",
-      duration: "Janv. - Févr. · 2 mois",
+      duration: "Janv. — Févr. · 2 mois",
       role: "Stage — Technicien Système & Réseau",
       company: "Groupe Lelièvre",
       tasks: [
@@ -55,8 +55,8 @@ const DATA = {
     },
     {
       date: "2024",
-      duration: "Avr. - Juin · 3 mois",
-      role: "Stage - Technicien Système & Réseau",
+      duration: "Avr. — Juin · 3 mois",
+      role: "Stage — Technicien Système & Réseau",
       company: "Groupe Lelièvre",
       tasks: [
         "Refonte complète de l'installation réseau d'une agence",
@@ -66,8 +66,8 @@ const DATA = {
     },
     {
       date: "2022",
-      duration: "Mars - Mai · 3 mois",
-      role: "Stage - Technicien Système & Réseau",
+      duration: "Mars — Mai · 3 mois",
+      role: "Stage — Technicien Système & Réseau",
       company: "Groupe Lelièvre",
       tasks: [
         "Surveillance et maintenance du réseau informatique",
@@ -82,10 +82,12 @@ const DATA = {
     { label: "Réseaux (VLAN, DNS, DHCP)", level: 75 },
     { label: "GLPI", level: 90 },
     { label: "Virtualisation", level: 80 },
-    { label: "Scripting ", level: 35 },
+    { label: "Scripting PowerShell", level: 65 },
     { label: "Support & assistance utilisateurs", level: 70 },
+    { label: "Automatisation", level: 75 },
     { label: "Documentation technique", level: 80 },
     { label: "Cybersécurité", level: 50 },
+    { label: "RGPD & conformité (CNIL)", level: 55 },
   ],
 
   // Constructeurs et technologies rencontrés en stage/alternance (matériel et solutions manipulés directement).
