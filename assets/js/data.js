@@ -3,12 +3,13 @@ const DATA = {
   profile: {
     name: "Nathan Drancourt",
     title: "Administrateur Systèmes & Réseaux",
-  //  tagline: "Je conçois, sécurise et documente des infrastructures fiables. Alternance d'un an à l'Automobile Club de l'Ouest, jusqu'en septembre 2026.",
-    status: "Disponible dès octobre 2026",
+    tagline: "Jeune diplômé en administration systèmes et réseaux, je cherche un poste où continuer à apprendre sur le terrain et à documenter ce que je fais, homelab compris.",
+    status: "Disponible immédiatement",
     location: "Le Mans, France",
     email: "nathan.drancourt@outlook.fr",
     linkedin: "https://www.linkedin.com/in/nathan-drancourt/",
     github: "https://github.com/ImNvthan",
+    rootme: "https://www.root-me.org/Nvthan?lang=fr",
     cvPdf: "CV-Nathan-Drancourt.pdf",
     cvImage: "CV-Nathan-Drancourt.png",
   },
@@ -18,7 +19,6 @@ const DATA = {
     { value: 12, suffix: "", label: "mois en alternance" },
     { value: 11, suffix: "", label: "projets aboutis" },
     { value: 5, suffix: "", label: "certifications" },
-    { value: 12, suffix: "", label: "services auto-hébergés" },
   ],
 
   about: [
@@ -28,9 +28,9 @@ const DATA = {
 
   experience: [
     {
-      date: "2025 - 2026",
-      duration: "Sept. 2025 - Sept. 2026 · 12 mois",
-      role: "Alternant - Administrateur Système & Réseau",
+      date: "2025 — 2026",
+      duration: "Sept. 2025 — Sept. 2026 · 12 mois",
+      role: "Alternant — Administrateur Système & Réseau",
       company: "Automobile Club de l'Ouest",
       tasks: [
         "Administration Windows Server, Linux et Microsoft 365",
@@ -43,34 +43,35 @@ const DATA = {
     },
     {
       date: "2025",
-      duration: "Janv. - Févr. · 2 mois",
+      duration: "Janv. — Févr. · 2 mois",
       role: "Stage — Technicien Système & Réseau",
       company: "Groupe Lelièvre",
       tasks: [
         "Mise en place d'un nouveau type de notification GLPI",
         "Campagne de sensibilisation au phishing",
-        "Déploiement de postes de travail, support utilisateurs",
+        "Déploiement de postes de travail, support utilisateurs niveaux 1 &amp; 2",
         "Diagnostic et résolution d'incidents réseau",
       ],
     },
     {
       date: "2024",
-      duration: "Avr. - Juin · 3 mois",
-      role: "Stage - Technicien Système & Réseau",
+      duration: "Avr. — Juin · 3 mois",
+      role: "Stage — Technicien Système & Réseau",
       company: "Groupe Lelièvre",
       tasks: [
         "Refonte complète de l'installation réseau d'une agence",
         "Migration du pare-feu pfSense vers OPNsense",
-        "Déploiement de postes de travail, support utilisateurs",
+        "Déploiement de postes de travail, support utilisateurs niveaux 1 &amp; 2",
       ],
     },
     {
       date: "2022",
-      duration: "Mars - Mai · 3 mois",
-      role: "Stage - Technicien Système & Réseau",
+      duration: "Mars — Mai · 3 mois",
+      role: "Stage — Technicien Système & Réseau",
       company: "Groupe Lelièvre",
       tasks: [
         "Surveillance et maintenance du réseau informatique",
+        "Support utilisateurs niveaux 1 &amp; 2",
         "Mise en place d'un serveur de logs interne",
       ],
     },
@@ -82,8 +83,9 @@ const DATA = {
     { label: "Réseaux (VLAN, DNS, DHCP)", level: 75 },
     { label: "GLPI", level: 90 },
     { label: "Virtualisation", level: 80 },
-    { label: "Scripting ", level: 35 },
+    { label: "Scripting PowerShell", level: 65 },
     { label: "Support & assistance utilisateurs", level: 70 },
+    { label: "Automatisation", level: 75 },
     { label: "Documentation technique", level: 80 },
     { label: "Cybersécurité", level: 50 },
   ],
@@ -101,16 +103,19 @@ const DATA = {
       { name: "OPNsense", logo: "opnsense.svg" },
     ] },
     { group: "Serveurs & Virtualisation", items: [
-      { name: "Dell PowerEdge", logo: "dell.svg" },
       { name: "Proxmox VE", logo: "proxmox.svg" },
-      { name: "VMware", logo: "vmware.svg" },
+      { name: "VMware Workstation Pro", logo: "vmware.svg" },
       { name: "VirtualBox", logo: "virtualbox.svg" },
       { name: "Docker", logo: "docker.svg" },
+      { name: "AWS", logo: "aws.svg" },
     ] },
     { group: "Systèmes & Scripting", items: [
       { name: "Windows Server", logo: "winserver.svg" },
       { name: "Debian", logo: "debian.svg" },
+      { name: "Ubuntu", logo: "ubuntu.svg" },
+      { name: "Kali Linux", logo: "kali.svg" },
       { name: "PowerShell", logo: "powershell.svg" },
+      { name: "Bash", logo: "bash.svg" },
     ] },
     { group: "Cloud & Productivité", items: [
       { name: "Microsoft 365", logo: "m365.svg" },
@@ -254,7 +259,7 @@ const DATA = {
   // Homelab — labo perso auto-hébergé sur Proxmox. Services listés = ceux réellement déployés.
   homelab: {
     intro:
-      "À la maison, un Dell PowerEdge T410 sous Proxmox VE héberge une douzaine de services en conteneurs LXC : DNS filtrant, reverse proxy, supervision, SIEM, média… C'est mon terrain d'essai — j'y déploie, casse et documente les mêmes briques qu'en production.",
+      "À la maison, un Dell PowerEdge T410 sous Proxmox VE héberge une douzaine de services en conteneurs LXC : DNS filtrant, reverse proxy, supervision, SIEM, média… C'est mon terrain d'essai, j'y déploie, casse et documente les mêmes briques qu'en production.",
     hardware: [
       ["Machine", "Dell PowerEdge T410"],
       ["Hyperviseur", "Proxmox VE"],

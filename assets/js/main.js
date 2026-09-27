@@ -28,6 +28,7 @@ function renderContent() {
   document.getElementById("contactMail").setAttribute("href", "mailto:" + p.email);
   document.getElementById("linkedinLink").setAttribute("href", p.linkedin);
   document.getElementById("githubLink").setAttribute("href", p.github);
+  document.getElementById("rootmeLink").setAttribute("href", p.rootme);
   document.getElementById("locationText").textContent = p.location;
   document.getElementById("year").textContent = new Date().getFullYear();
 
