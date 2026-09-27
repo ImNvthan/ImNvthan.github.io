@@ -111,7 +111,10 @@ const DATA = {
     { group: "Systèmes & Scripting", items: [
       { name: "Windows Server", logo: "winserver.svg" },
       { name: "Debian", logo: "debian.svg" },
+      { name: "Ubuntu", logo: "ubuntu.svg" },
+      { name: "Kali Linux", logo: "kali.svg" },
       { name: "PowerShell", logo: "powershell.svg" },
+      { name: "Bash", logo: "bash.svg" },
     ] },
     { group: "Cloud & Productivité", items: [
       { name: "Microsoft 365", logo: "m365.svg" },
