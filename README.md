@@ -1,43 +1,56 @@
-# Portfolio - Nathan Drancourt
+# Portfolio — Nathan Drancourt
 
-Bienvenue sur le dépôt de mon portfolio professionnel.
+Dépôt du portfolio personnel de Nathan Drancourt, administrateur systèmes & réseaux.
 
-Ce site présente mon profil, mes compétences et mes projets dans le domaine de l'informatique, avec une spécialisation en **administration systèmes et réseaux**.
+**Site en ligne : [imnvthan.github.io](https://imnvthan.github.io)**
 
-## Objectif du portfolio
+## Contenu du site
 
-Ce portfolio a été créé afin de :
-
-- Présenter mon parcours dans l'informatique
-- Mettre en avant mes compétences techniques
-- Partager mes projets
-
-## Aperçu
-
-Le site contient plusieurs sections :
-
-- Présentation
+- Profil et parcours (formations, expériences)
 - Compétences techniques
-- Projets
-- Parcours
+- Équipements & technologies manipulés (réseau, virtualisation, systèmes, cloud, ITSM)
+- Projets et réalisations
+- Homelab personnel (Proxmox, LXC, services auto-hébergés)
+- Diplômes, certifications et formations
 - Contact
+- Mentions légales
 
-## Technologies utilisées
+## Stack technique
 
-- HTML5
-- CSS3
-- GitHub
+Le site est une page statique, sans framework ni build :
 
-## Accéder au site
+- HTML5 / CSS3, sans dépendance CSS externe
+- JavaScript vanilla : le contenu (`assets/js/data.js`) est séparé du rendu (`assets/js/main.js`), qui construit le DOM et gère la navigation
+- [GSAP](https://gsap.com/) + ScrollTrigger pour les animations au scroll
+- [Three.js](https://threejs.org/) pour la scène 3D en fond de page
+- Polices via Google Fonts (Bricolage Grotesque, Inter)
+- Hébergé sur GitHub Pages
 
-Vous pouvez consulter mon portfolio ici :
+## Structure du dépôt
 
-**https://ImNvthan.github.io**
+```
+index.html
+mentions-legales.html
+assets/
+  css/style.css       styles
+  js/data.js          contenu du site (texte, projets, compétences...)
+  js/main.js          rendu du contenu + interactions
+  js/scene.js         scène Three.js du fond de page
+  equipment/          logos des technologies citées
+  certs/              logos des certifications
+  vendor/             bibliothèques tierces (GSAP, ScrollTrigger, Three.js)
+```
 
-## Installation du projet
+## Lancer le projet en local
 
-Si vous souhaitez exécuter le projet en local :
+Le site n'a besoin d'aucune dépendance ni build. Cloner le dépôt puis ouvrir `index.html` dans un navigateur, ou servir le dossier avec un serveur statique :
 
 ```bash
 git clone https://github.com/ImNvthan/ImNvthan.github.io.git
 cd ImNvthan.github.io
+npx serve .
+```
+
+## Modifier le contenu
+
+Le texte du site (profil, expériences, compétences, projets, équipements, homelab, certifications) est centralisé dans `assets/js/data.js`. Modifier ce fichier suffit à mettre à jour le contenu affiché, sans toucher au HTML.
