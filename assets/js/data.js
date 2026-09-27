@@ -259,7 +259,7 @@ const DATA = {
   // Homelab — labo perso auto-hébergé sur Proxmox. Services listés = ceux réellement déployés.
   homelab: {
     intro:
-      "À la maison, un Dell PowerEdge T410 sous Proxmox VE héberge une douzaine de services en conteneurs LXC : DNS filtrant, reverse proxy, supervision, SIEM, média… C'est mon terrain d'essai — j'y déploie, casse et documente les mêmes briques qu'en production.",
+      "À la maison, un Dell PowerEdge T410 sous Proxmox VE héberge une douzaine de services en conteneurs LXC : DNS filtrant, reverse proxy, supervision, SIEM, média… C'est mon terrain d'essai, j'y déploie, casse et documente les mêmes briques qu'en production.",
     hardware: [
       ["Machine", "Dell PowerEdge T410"],
       ["Hyperviseur", "Proxmox VE"],
