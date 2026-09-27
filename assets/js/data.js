@@ -49,7 +49,7 @@ const DATA = {
       tasks: [
         "Mise en place d'un nouveau type de notification GLPI",
         "Campagne de sensibilisation au phishing",
-        "Déploiement de postes de travail, support utilisateurs",
+        "Déploiement de postes de travail, support utilisateurs niveaux 1 &amp; 2",
         "Diagnostic et résolution d'incidents réseau",
       ],
     },
@@ -61,7 +61,7 @@ const DATA = {
       tasks: [
         "Refonte complète de l'installation réseau d'une agence",
         "Migration du pare-feu pfSense vers OPNsense",
-        "Déploiement de postes de travail, support utilisateurs",
+        "Déploiement de postes de travail, support utilisateurs niveaux 1 &amp; 2",
       ],
     },
     {
@@ -71,6 +71,7 @@ const DATA = {
       company: "Groupe Lelièvre",
       tasks: [
         "Surveillance et maintenance du réseau informatique",
+        "Support utilisateurs niveaux 1 &amp; 2",
         "Mise en place d'un serveur de logs interne",
       ],
     },
@@ -87,7 +88,6 @@ const DATA = {
     { label: "Automatisation", level: 75 },
     { label: "Documentation technique", level: 80 },
     { label: "Cybersécurité", level: 50 },
-    { label: "RGPD & conformité (CNIL)", level: 55 },
   ],
 
   // Constructeurs et technologies rencontrés en stage/alternance (matériel et solutions manipulés directement).
