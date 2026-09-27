@@ -3,7 +3,7 @@ const DATA = {
   profile: {
     name: "Nathan Drancourt",
     title: "Administrateur Systèmes & Réseaux",
-    tagline: "Je conçois, sécurise et documente des infrastructures fiables. Alternance d'un an à l'Automobile Club de l'Ouest, jusqu'en septembre 2026.",
+    tagline: "Alternant administrateur systèmes & réseaux, à l'aise aussi bien sur un serveur que devant un utilisateur en difficulté.",
     status: "Disponible dès octobre 2026",
     location: "Le Mans, France",
     email: "nathan.drancourt@outlook.fr",
