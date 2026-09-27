@@ -18,7 +18,6 @@ const DATA = {
     { value: 12, suffix: "", label: "mois en alternance" },
     { value: 11, suffix: "", label: "projets aboutis" },
     { value: 5, suffix: "", label: "certifications" },
-    { value: 12, suffix: "", label: "services auto-hébergés" },
   ],
 
   about: [
