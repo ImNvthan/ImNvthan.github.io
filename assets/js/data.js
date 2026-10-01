@@ -40,7 +40,7 @@ const DATA = {
         "Mise en œuvre et maintien des politiques de sécurité informatique",
         "Détection, analyse et traitement des incidents de sécurité",
         "Sensibilisation des utilisateurs aux bonnes pratiques de sécurité informatique",
-        "Support technique niveaux 1, 2 &amp; 3 sur les problématiques réseau et sécurité",
+        "Support technique niveaux 1, 2 et 3 sur les problématiques réseau, système et sécurité",
         "Automatisation de process : GLPI, scripts, Power Automate",
         "Rédaction et suivi de la documentation qualité et sécurité : procédures, incidents, interventions",
       ],
