@@ -35,10 +35,15 @@ const DATA = {
       tasks: [
         "Administration Windows Server, Linux et Microsoft 365",
         "Active Directory : OU, GPO, comptes utilisateurs",
-        "Installation &amp; configuration réseau : switchs, routeurs, bornes WiFi",
-        "Supervision et support technique niveaux 1 &amp; 2",
+        "Installation, configuration et administration des équipements réseau : switchs, routeurs, bornes WiFi, VLAN, VPN, QoS",
+        "Supervision de la performance et de la disponibilité des réseaux, support technique niveaux 1 &amp; 2",
+        "Mise en œuvre et maintien des politiques de sécurité informatique",
+        "Détection, analyse et traitement des incidents de sécurité",
+        "Audits de sécurité réguliers et application des correctifs",
+        "Sensibilisation des utilisateurs aux bonnes pratiques de sécurité informatique",
+        "Support technique niveaux 2 &amp; 3 sur les problématiques réseau et sécurité",
         "Automatisation de process : GLPI, scripts, Power Automate",
-        "Documentation technique (procédures, notices)",
+        "Rédaction et suivi de la documentation qualité et sécurité : procédures, incidents, interventions",
       ],
     },
     {
