@@ -40,6 +40,7 @@ const DATA = {
         "Mise en œuvre et maintien des politiques de sécurité informatique",
         "Détection, analyse et traitement des incidents de sécurité",
         "Sensibilisation des utilisateurs aux bonnes pratiques de sécurité informatique",
+        "Formation des utilisateurs aux outils collaboratifs (OneDrive, partage de fichiers)",
         "Support technique niveaux 1, 2 et 3 sur les problématiques réseau, système et sécurité",
         "Automatisation de process : GLPI, scripts, Power Automate",
         "Rédaction et suivi de la documentation qualité et sécurité : procédures, incidents, interventions",
@@ -99,11 +100,16 @@ const DATA = {
       { label: "GLPI", level: 90 },
       { label: "Support utilisateurs", level: 70 },
       { label: "Supervision & monitoring", level: 65 },
+      { label: "Formation & accompagnement utilisateurs", level: 65 },
     ] },
     { group: "Automatisation & Documentation", items: [
       { label: "Scripting PowerShell", level: 65 },
       { label: "Automatisation", level: 75 },
       { label: "Documentation technique", level: 80 },
+    ] },
+    { group: "Gestion de projet", items: [
+      { label: "Gestion de projet", level: 55 },
+      { label: "Cahier des charges", level: 55 },
     ] },
   ],
 
