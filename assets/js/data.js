@@ -36,7 +36,7 @@ const DATA = {
         "Administration Windows Server, Linux et Microsoft 365",
         "Active Directory : OU, GPO, comptes utilisateurs",
         "Installation, configuration et administration des équipements réseau : switchs, routeurs, bornes WiFi, VLAN, VPN, QoS",
-        "Supervision de la performance et de la disponibilité des réseaux, support technique niveaux 1 &amp; 2",
+        "Supervision de la performance et de la disponibilité des réseaux",
         "Mise en œuvre et maintien des politiques de sécurité informatique",
         "Détection, analyse et traitement des incidents de sécurité",
         "Sensibilisation des utilisateurs aux bonnes pratiques de sécurité informatique",
