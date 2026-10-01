@@ -99,17 +99,11 @@ const DATA = {
       { label: "GLPI", level: 90 },
       { label: "Support utilisateurs", level: 70 },
       { label: "Supervision & monitoring", level: 65 },
-      { label: "Formation & accompagnement utilisateurs", level: 65 },
     ] },
     { group: "Automatisation & Documentation", items: [
       { label: "Scripting PowerShell", level: 65 },
       { label: "Automatisation", level: 75 },
       { label: "Documentation technique", level: 80 },
-      { label: "Supports de formation utilisateurs", level: 60 },
-    ] },
-    { group: "Gestion de projet", items: [
-      { label: "Cahier des charges & gestion de prestataires", level: 50 },
-      { label: "Reporting & suivi d'activité", level: 55 },
     ] },
   ],
 
