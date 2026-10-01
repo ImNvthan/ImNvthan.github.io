@@ -40,7 +40,7 @@ const DATA = {
         "Mise en œuvre et maintien des politiques de sécurité informatique",
         "Détection, analyse et traitement des incidents de sécurité",
         "Sensibilisation des utilisateurs aux bonnes pratiques de sécurité informatique",
-        "Formation des utilisateurs aux outils collaboratifs (OneDrive, partage de fichiers)",
+        "Formation des utilisateurs aux outils collaboratifs",
         "Support technique niveaux 1, 2 et 3 sur les problématiques réseau, système et sécurité",
         "Automatisation de process : GLPI, scripts, Power Automate",
         "Rédaction et suivi de la documentation qualité et sécurité : procédures, incidents, interventions",
