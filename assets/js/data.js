@@ -94,6 +94,16 @@ const DATA = {
     { label: "Cybersécurité", level: 50 },
   ],
 
+  softSkills: [
+    "Capacité d'adaptation",
+    "Organisation",
+    "Travail en équipe / en autonomie",
+    "Écoute active",
+    "Curiosité",
+    "Rigueur",
+    "Détermination",
+  ],
+
   // Constructeurs et technologies rencontrés en stage/alternance (matériel et solutions manipulés directement).
   // logo => fichier dans assets/equipment/ (svg). null => initiale du nom.
   equipment: [

@@ -69,6 +69,9 @@ function renderContent() {
     ]));
   });
 
+  const softSkillChips = document.getElementById("softSkillChips");
+  (DATA.softSkills || []).forEach(s => softSkillChips.appendChild(el("span", { text: s })));
+
   const equipmentStack = document.getElementById("equipmentStack");
   (DATA.equipment || []).forEach(g => {
     const chips = el("div", { class: "equip-chips" });

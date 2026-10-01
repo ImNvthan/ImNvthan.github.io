@@ -104,6 +104,7 @@ h2, h3 { font-family: var(--font-display); font-weight: 600; }
 .skill-bar { height: 3px; background: var(--line); border-radius: 2px; overflow: hidden; }
 .skill-fill { height: 100%; width: 0%; background: var(--accent); }
 .skill-num { font-size: 0.8rem; color: var(--muted); text-align: right; font-variant-numeric: tabular-nums; }
+.soft-skills-title { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--accent); margin: 2.4rem 0 0.8rem; }
 
 /* ============ PROJECTS ============ */
 .project-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.4rem; margin-top: 1.4rem; }
