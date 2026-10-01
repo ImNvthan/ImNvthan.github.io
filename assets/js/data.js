@@ -82,16 +82,24 @@ const DATA = {
   ],
 
   skills: [
-    { label: "Systèmes Windows / AD", level: 80 },
-    { label: "Linux", level: 75 },
-    { label: "Réseaux (VLAN, DNS, DHCP)", level: 75 },
-    { label: "GLPI", level: 90 },
-    { label: "Virtualisation", level: 80 },
-    { label: "Scripting PowerShell", level: 65 },
-    { label: "Support & assistance utilisateurs", level: 70 },
-    { label: "Automatisation", level: 75 },
-    { label: "Documentation technique", level: 80 },
-    { label: "Cybersécurité", level: 50 },
+    { group: "Systèmes & Infrastructure", items: [
+      { label: "Systèmes Windows / AD", level: 80 },
+      { label: "Linux", level: 75 },
+      { label: "Virtualisation", level: 80 },
+    ] },
+    { group: "Réseaux & Sécurité", items: [
+      { label: "Réseaux (VLAN, DNS, DHCP)", level: 75 },
+      { label: "Cybersécurité", level: 50 },
+    ] },
+    { group: "Support & ITSM", items: [
+      { label: "GLPI", level: 90 },
+      { label: "Support & assistance utilisateurs", level: 70 },
+    ] },
+    { group: "Automatisation & Documentation", items: [
+      { label: "Scripting PowerShell", level: 65 },
+      { label: "Automatisation", level: 75 },
+      { label: "Documentation technique", level: 80 },
+    ] },
   ],
 
   softSkills: [

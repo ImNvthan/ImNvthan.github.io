@@ -61,11 +61,18 @@ function renderContent() {
   });
 
   const skillRows = document.getElementById("skillRows");
-  DATA.skills.forEach(s => {
-    skillRows.appendChild(el("div", { class: "skill-row reveal" }, [
-      el("span", { class: "skill-label", text: s.label }),
-      el("div", { class: "skill-bar" }, [el("div", { class: "skill-fill", "data-level": s.level })]),
-      el("span", { class: "skill-num", text: s.level + "%" }),
+  DATA.skills.forEach(g => {
+    const rows = el("div", { class: "skill-group-rows" });
+    g.items.forEach(s => {
+      rows.appendChild(el("div", { class: "skill-row reveal" }, [
+        el("span", { class: "skill-label", text: s.label }),
+        el("div", { class: "skill-bar" }, [el("div", { class: "skill-fill", "data-level": s.level })]),
+        el("span", { class: "skill-num", text: s.level + "%" }),
+      ]));
+    });
+    skillRows.appendChild(el("div", { class: "skill-group" }, [
+      el("h3", { class: "skill-group-title", text: g.group }),
+      rows,
     ]));
   });
 
