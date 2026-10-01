@@ -86,14 +86,17 @@ const DATA = {
       { label: "Systèmes Windows / AD", level: 80 },
       { label: "Linux", level: 75 },
       { label: "Virtualisation", level: 80 },
+      { label: "Microsoft 365", level: 70 },
     ] },
     { group: "Réseaux & Sécurité", items: [
       { label: "Réseaux (VLAN, DNS, DHCP)", level: 75 },
+      { label: "Pare-feu & VPN", level: 60 },
       { label: "Cybersécurité", level: 50 },
     ] },
     { group: "Support & ITSM", items: [
       { label: "GLPI", level: 90 },
-      { label: "Support & assistance utilisateurs", level: 70 },
+      { label: "Support utilisateurs", level: 70 },
+      { label: "Supervision & monitoring", level: 65 },
     ] },
     { group: "Automatisation & Documentation", items: [
       { label: "Scripting PowerShell", level: 65 },
