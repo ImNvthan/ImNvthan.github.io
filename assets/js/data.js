@@ -110,6 +110,7 @@ const DATA = {
     { group: "Gestion de projet", items: [
       { label: "Gestion de projet", level: 55 },
       { label: "Cahier des charges", level: 55 },
+      { label: "Reporting & suivi d'activité", level: 55 },
     ] },
   ],
 
